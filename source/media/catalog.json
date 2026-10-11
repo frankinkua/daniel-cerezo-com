@@ -1,4 +1,10 @@
 {
+  "search_keywords": {
+    "name_variants": ["Daniel Cerezo", "Dani Cerezo"],
+    "projects_companies": ["CreerHacer", "Creer Hacer"],
+    "awards_events": ["TEDxSanIsidro", "TEDx", "Cannes Lions"],
+    "distinctive_phrases": ["pobreza invisible", "que es el exito", "liderazgo empatico"]
+  },
   "media_mentions": [
     {
       "subject": "Interview regarding personal history and social values",
@@ -9,7 +15,7 @@
       "source_url": "https://www.lanacion.com.ar/comunidad/daniel-cerezo-la-calle-te-ensena-a-superarte-el-valor-de-la-palabra-y-a-compartir-nid1891222/",
       "local_path": "",
       "rights_evidence": "All rights reserved by La Nación. Reference only.",
-      "retrieval_date": "2024-05-24",
+      "retrieval_date": "2026-10-11",
       "intended_page": "index.html#prensa",
       "confidence": "high"
     },
@@ -22,7 +28,7 @@
       "source_url": "https://www.lanacion.com.ar/otros/daniel-cerezo-el-hombre-que-impacto-en-tedx-nid05102014/",
       "local_path": "",
       "rights_evidence": "All rights reserved. Reference only.",
-      "retrieval_date": "2024-05-24",
+      "retrieval_date": "2026-10-11",
       "intended_page": "index.html#prensa",
       "confidence": "high"
     },
@@ -35,7 +41,7 @@
       "source_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
       "local_path": "",
       "rights_evidence": "YouTube Standard License / TED. Reference / Embed only.",
-      "retrieval_date": "2024-05-24",
+      "retrieval_date": "2026-10-11",
       "intended_page": "index.html#tedx",
       "confidence": "high"
     },
@@ -48,20 +54,20 @@
       "source_url": "https://www.youtube.com/watch?v=VUI0K4rIZU0",
       "local_path": "",
       "rights_evidence": "YouTube Standard License / TED. Reference / Embed only.",
-      "retrieval_date": "2024-05-24",
+      "retrieval_date": "2026-10-11",
       "intended_page": "index.html#tedx",
       "confidence": "high"
     },
     {
       "subject": "Interview on social transformation",
       "publisher": "La Nación",
-      "title": "Daniel Cerezo: 'La caridad parte de mirar al otro desde lo que le falta y esto es un error'",
-      "date_published": "2026-09-07",
+      "title": "Daniel Cerezo, transformador social: 'La caridad parte de mirar al otro desde lo que le falta y esto es un error'",
+      "date_published": "2019-09-07",
       "type": "article",
-      "source_url": "https://www.lanacion.com.ar/salud/daniel-cerezo-transformador-social-la-caridad-parte-de-mirar-al-otro-desde-lo-que-le-falta-y-esto-nid07092026/",
+      "source_url": "https://www.lanacion.com.ar/salud/daniel-cerezo-transformador-social-la-caridad-parte-de-mirar-al-otro-desde-lo-que-le-falta-y-esto-nid07092019/",
       "local_path": "",
       "rights_evidence": "All rights reserved. Reference only.",
-      "retrieval_date": "2024-05-24",
+      "retrieval_date": "2026-10-11",
       "intended_page": "index.html#prensa",
       "confidence": "high"
     },
@@ -74,7 +80,7 @@
       "source_url": "https://tn.com.ar/podcasts/2023/10/29/la-pobreza-va-mas-alla-del-dinero-daniel-cerezo-una-historia-de-transformacion/",
       "local_path": "",
       "rights_evidence": "All rights reserved. Reference only.",
-      "retrieval_date": "2024-05-24",
+      "retrieval_date": "2026-10-11",
       "intended_page": "index.html#prensa",
       "confidence": "high"
     },
@@ -87,7 +93,7 @@
       "source_url": "https://radiocut.fm/audiocut/entrevista-a-daniel-cerezo-fundador-empresa-social-creer-hacer/",
       "local_path": "",
       "rights_evidence": "All rights reserved. Reference only.",
-      "retrieval_date": "2024-05-24",
+      "retrieval_date": "2026-10-11",
       "intended_page": "index.html#prensa",
       "confidence": "high"
     }
