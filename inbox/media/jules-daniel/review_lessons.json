@@ -6,6 +6,8 @@
     "Official hosting of an image does NOT equate to a license or permission for reuse. Unless genuine permission or standard licensing (e.g., CC) is explicit, do not download or claim 'press permission'. Set media as `reference_only`.",
     "TED Policy restricts promotional reuse. TED assets should be linked via their canonical site (ted.com) as `reference_only`, rather than raw unverified YouTube IDs.",
     "Only state precise facts (like foundation years or B-corp status) if they are explicitly supported by claim-level exact source links. Omit unverified claims.",
-    "Validation scripts must fail loudly (return non-zero exit codes) on schema violation, missing files, or unsafe rights instead of just printing."
+    "Validation scripts must fail loudly (return non-zero exit codes) on schema violation, missing files, or unsafe rights instead of just printing.",
+    "Retrieval dates must be real, observed dates. Never use a user-dictated constant as a retrieval date.",
+    "When images are officially hosted but lack clear identity or license evidence, label them as 'Lead needing human confirmation' rather than asserting identity."
   ]
 }
