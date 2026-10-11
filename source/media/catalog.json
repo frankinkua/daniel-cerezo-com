@@ -1,0 +1,96 @@
+{
+  "media_mentions": [
+    {
+      "subject": "Interview regarding personal history and social values",
+      "publisher": "La Nación",
+      "title": "Daniel Cerezo: 'La calle te enseña a superarte, el valor de la palabra y a compartir'",
+      "date_published": "2016-10-06",
+      "type": "article",
+      "source_url": "https://www.lanacion.com.ar/comunidad/daniel-cerezo-la-calle-te-ensena-a-superarte-el-valor-de-la-palabra-y-a-compartir-nid1891222/",
+      "local_path": "",
+      "rights_evidence": "All rights reserved by La Nación. Reference only.",
+      "retrieval_date": "2024-05-24",
+      "intended_page": "index.html#prensa",
+      "confidence": "high"
+    },
+    {
+      "subject": "Profile piece post-TEDx talk",
+      "publisher": "La Nación / OHLALÁ!",
+      "title": "Daniel Cerezo, el hombre que impactó en TEDx",
+      "date_published": "2014-10-05",
+      "type": "article",
+      "source_url": "https://www.lanacion.com.ar/otros/daniel-cerezo-el-hombre-que-impacto-en-tedx-nid05102014/",
+      "local_path": "",
+      "rights_evidence": "All rights reserved. Reference only.",
+      "retrieval_date": "2024-05-24",
+      "intended_page": "index.html#prensa",
+      "confidence": "high"
+    },
+    {
+      "subject": "TEDxSanIsidro Talk on poverty",
+      "publisher": "TEDx Talks",
+      "title": "¿Qué es la pobreza? | Daniel Cerezo | TEDxSanIsidro",
+      "date_published": "2014-10-15",
+      "type": "video",
+      "source_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "local_path": "",
+      "rights_evidence": "YouTube Standard License / TED. Reference / Embed only.",
+      "retrieval_date": "2024-05-24",
+      "intended_page": "index.html#tedx",
+      "confidence": "high"
+    },
+    {
+      "subject": "TEDxSanIsidro Talk on social inclusion",
+      "publisher": "TEDx Talks",
+      "title": "La hipocresía de la inclusión social | Daniel Cerezo | TEDxSanIsidro",
+      "date_published": "2016-12-14",
+      "type": "video",
+      "source_url": "https://www.youtube.com/watch?v=VUI0K4rIZU0",
+      "local_path": "",
+      "rights_evidence": "YouTube Standard License / TED. Reference / Embed only.",
+      "retrieval_date": "2024-05-24",
+      "intended_page": "index.html#tedx",
+      "confidence": "high"
+    },
+    {
+      "subject": "Interview on social transformation",
+      "publisher": "La Nación",
+      "title": "Daniel Cerezo: 'La caridad parte de mirar al otro desde lo que le falta y esto es un error'",
+      "date_published": "2026-09-07",
+      "type": "article",
+      "source_url": "https://www.lanacion.com.ar/salud/daniel-cerezo-transformador-social-la-caridad-parte-de-mirar-al-otro-desde-lo-que-le-falta-y-esto-nid07092026/",
+      "local_path": "",
+      "rights_evidence": "All rights reserved. Reference only.",
+      "retrieval_date": "2024-05-24",
+      "intended_page": "index.html#prensa",
+      "confidence": "high"
+    },
+    {
+      "subject": "Podcast interview on poverty and transformation",
+      "publisher": "TN / WeToker",
+      "title": "La pobreza va más allá del dinero: Daniel Cerezo, una historia de transformación",
+      "date_published": "2023-10-29",
+      "type": "podcast",
+      "source_url": "https://tn.com.ar/podcasts/2023/10/29/la-pobreza-va-mas-alla-del-dinero-daniel-cerezo-una-historia-de-transformacion/",
+      "local_path": "",
+      "rights_evidence": "All rights reserved. Reference only.",
+      "retrieval_date": "2024-05-24",
+      "intended_page": "index.html#prensa",
+      "confidence": "high"
+    },
+    {
+      "subject": "Interview regarding Creer Hacer",
+      "publisher": "RadioCut",
+      "title": "Entrevista a Daniel Cerezo, fundador de la empresa social Creer Hacer",
+      "date_published": "Unknown",
+      "type": "audio",
+      "source_url": "https://radiocut.fm/audiocut/entrevista-a-daniel-cerezo-fundador-empresa-social-creer-hacer/",
+      "local_path": "",
+      "rights_evidence": "All rights reserved. Reference only.",
+      "retrieval_date": "2024-05-24",
+      "intended_page": "index.html#prensa",
+      "confidence": "high"
+    }
+  ],
+  "assets": []
+}
