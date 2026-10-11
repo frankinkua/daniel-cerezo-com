@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-11",
+  "rights_note": "Public availability is not a reuse license. User-supplied photographs are used for this requested website; no general redistribution license is asserted. Reference-only media stay at the publisher.",
+  "tag_aliases": "tag-aliases.json",
+  "subject": "Daniel Cerezo",
+  "items": [
+    {
+      "id": "daniel-sunglasses",
+      "type": "image",
+      "title": "Daniel with sunglasses",
+      "source_url": null,
+      "local_path": "inbox/media/images/daniel-sunglasses.png",
+      "rights_status": "user_supplied",
+      "rights_evidence": "User attached and selected photograph for this website on 2026-10-11; approved crop only. Photographer/license not supplied.",
+      "tags": [
+        "portrait",
+        "personal"
+      ],
+      "related_tags": [],
+      "retrieved_at": "2026-10-11",
+      "sha256": "2df66cc2d49707611bc3bd79f79b3a035d53c990f3dfff7013b9d61ac3dfd074",
+      "identity_evidence": "Identified as Daniel by user.",
+      "transformations": "Exact pixel crop 364×782 at x112,y0; chat strip removed. No retouching or generated content."
+    },
+    {
+      "id": "tedx-poverty-2014",
+      "type": "video",
+      "title": "¿Qué es la pobreza?",
+      "source_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "local_path": null,
+      "rights_status": "reference_only",
+      "rights_evidence": "Canonical watch link only. TED use policy restricts promotional reuse; no footage or thumbnails copied.",
+      "tags": [
+        "video",
+        "poverty",
+        "community",
+        "music",
+        "social-impact"
+      ],
+      "related_tags": [
+        "inclusion"
+      ],
+      "retrieved_at": "2026-10-11",
+      "publisher": "TEDx Talks",
+      "published_at": "2014",
+      "identity_evidence": "Official YouTube oEmbed title names Daniel Cerezo and TEDxRiodelaPlata.",
+      "policy_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy"
+    },
+    {
+      "id": "tedx-inclusion-2021",
+      "type": "video",
+      "title": "La hipocresía de la inclusión social",
+      "source_url": "https://www.ted.com/talks/daniel_cerezo_la_hipocresia_de_la_inclusion_social",
+      "local_path": null,
+      "rights_status": "reference_only",
+      "rights_evidence": "Reference link only; no commercial reuse license established.",
+      "tags": [
+        "video",
+        "inclusion",
+        "community",
+        "social-impact"
+      ],
+      "related_tags": [
+        "poverty"
+      ],
+      "retrieved_at": "2026-10-11",
+      "publisher": "TED",
+      "published_at": "2021-11",
+      "identity_evidence": "Official speaker page identifies Daniel Cerezo and TEDxSanIsidro."
+    },
+    {
+      "id": "creer-hacer",
+      "type": "website",
+      "title": "Creer Hacer — Nosotros",
+      "source_url": "https://creerhacer.com/nosotros/",
+      "local_path": null,
+      "rights_status": "reference_only",
+      "rights_evidence": "Reference only. The official website does not by itself establish permission to reuse its photos.",
+      "tags": [
+        "community",
+        "social-impact",
+        "entrepreneurship"
+      ],
+      "related_tags": [],
+      "retrieved_at": "2026-10-11",
+      "identity_evidence": "Official organization biography."
+    },
+    {
+      "id": "daniel-profile-2016",
+      "type": "article",
+      "title": "Daniel Cerezo: community, music and shared learning",
+      "source_url": "https://www.lanacion.com.ar/comunidad/daniel-cerezo-la-calle-te-ensena-a-superarte-el-valor-de-la-palabra-y-a-compartir-nid1891222/",
+      "local_path": null,
+      "rights_status": "reference_only",
+      "rights_evidence": "Linked to original publisher; no copying or rehosting.",
+      "tags": [
+        "press",
+        "community",
+        "music"
+      ],
+      "related_tags": [],
+      "retrieved_at": "2026-10-11",
+      "published_at": "2016-04-21",
+      "identity_evidence": "Named biographical profile.",
+      "notes": "Source names La Cava. Other sources say Bajo Boulogne; these are not synonyms. Site uses wider supported geographic description."
+    },
+    {
+      "id": "daniel-music-2014",
+      "type": "article",
+      "title": "The story behind the TEDx talk",
+      "source_url": "https://www.pagina12.com.ar/diario/sociedad/3-256601-2014-10-02.html",
+      "local_path": null,
+      "rights_status": "reference_only",
+      "rights_evidence": "Linked to original publisher; no copying or rehosting.",
+      "tags": [
+        "press",
+        "music",
+        "community"
+      ],
+      "related_tags": [],
+      "retrieved_at": "2026-10-11",
+      "published_at": "2014-10-02",
+      "identity_evidence": "Named report supporting piano from age nine and community/prison teaching."
+    }
+  ]
+}

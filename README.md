@@ -1,30 +1,30 @@
-# daniel-cerezo-com
+# Daniel Cerezo — a shared human story
 
-Official landing page and website for **Daniel Cerezo** — Social Leader, Keynote Speaker, Organizational Culture Consultant, and Author of *Viaje a mi interior*.
+A Spanish-language static personal website with the user-selected sunglasses portrait, a four-chapter scroll story, Creer Hacer reference, canonical talk links and searchable media tags.
 
-- **Live URL:** https://daniel-cerezo.com (or https://frankinkua.github.io/daniel-cerezo-com/)
-- **Status:** Active / Work in Progress
+## Story and evidence
 
-## Key Features
+- Neighborhood → music → community → public voice. An original symbolic SVG scene changes with scroll; it is not documentary imagery.
+- The first portrait is an exact crop approved by the user: the unrelated chat sidebar was removed, without AI retouching.
+- `inbox/media/catalog.json` contains identity evidence, sources, dates, rights notes and image checksum.
+- Earlier unsupported Villa 21-24, book and talk-title claims were removed. Conflicting neighborhood references are not converted into aliases.
+- TED talks link to the original publications. No ripped footage, commercial reuse claims, autoplay or third-party tracking embeds.
+- The contact action opens Daniel's public professional profile. There is no fake form submission.
+- With reduced motion enabled, transitions are disabled and the illustrated story remains static; all text stays readable. No scroll hijacking.
 
-- **High-Impact Landing Page:** Mobile-first, responsive, accessible design with Tailwind CSS and Lucide icons.
-- **Biographical & Trajectory Overview:** From Villa 21-24 in Buenos Aires to international stages and boardrooms. Founder of *CreerHacer*.
-- **Keynotes & Topics:** Catalog of signature talks (*¿Qué es el éxito?*, *Liderazgo Empático*, *La Pobreza Invisible*, *Resiliencia*).
-- **Corporate Consulting & Workshops (B2B):** Workplace climate, diversity integration, and human rights audits.
-- **Media & TEDx Showcase:** Direct links and highlights of viral TEDx talks.
-- **Booking & Contact Engine:** Inquiry form for event bookings, executive workshops, and media interviews.
-
-## Deployment & Hosting
-
-- Automated GitHub Pages deployment via `.github/workflows/pages.yml`.
-- Custom domain configured via `CNAME` pointing to `daniel-cerezo.com`.
-- Zero-cost, high-availability global edge delivery.
-
-## Local Development
-
-Open `index.html` directly in any web browser or run:
+## Local checks
 
 ```bash
-python3 -m http.server 8080
-# Open http://localhost:8080
+node --test tests/*.test.cjs
+python3 -m http.server 8080 --bind 127.0.0.1
 ```
+
+Check desktop and mobile layout, all four scene states, menu keyboard behavior, accented search terms and empty results.
+
+## Deployment and future media
+
+The existing domain `daniel-cerezo.com` is preserved. GitHub Pages tests the site and runs `scripts/build.cjs` to publish an explicit allowlist to `_site/`. The builder refuses to overwrite an existing build.
+
+Jules research under `inbox/media/jules-daniel/` must be reviewed before any item is promoted into the main catalogue. An official website is not evidence of photo reuse permission. Do not rehost unlicensed references.
+
+Local fonts are DM Sans and Instrument Serif, with their SIL Open Font Licenses. User-supplied photography is not relicensed by the repository.
