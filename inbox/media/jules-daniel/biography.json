@@ -1,0 +1,36 @@
+{
+  "subject": "Daniel Cerezo",
+  "summary": "Social psychologist, musician, and community leader who founded CreerHacer. He advocates for social inclusion, challenging traditional definitions of poverty through the lens of relationships and collective agency.",
+  "trajectory": [
+    {
+      "period": "Early Life",
+      "location": "San Juan, Argentina",
+      "event": "Born in San Juan. Moved to Buenos Aires with his family due to economic hardship.",
+      "source_url": "https://www.lanacion.com.ar/sociedad/daniel-cerezo-nid1867169/"
+    },
+    {
+      "period": "Childhood & Adolescence",
+      "location": "Bajo Boulogne / La Cava, San Isidro, Buenos Aires",
+      "event": "Raised in the Bajo Boulogne neighborhood. His mother worked hard to support the family. Daniel discovered his passion for music and classical piano, heavily supported by the foundation 'Crear vale la pena'. This experience shifted his perspective on possibilities and agency.",
+      "source_url": "https://creerhacer.com/nosotros/"
+    },
+    {
+      "period": "Professional Development",
+      "location": "Buenos Aires, Argentina",
+      "event": "Worked at 'Las Páez', where he focused on integrating social work into corporate culture and developing the concept of 'gerencia de cultura y felicidad' (management of culture and happiness).",
+      "source_url": "https://ar.linkedin.com/in/danielcerezook"
+    },
+    {
+      "period": "2013 - Present",
+      "location": "Buenos Aires, Argentina",
+      "event": "Founded 'CreerHacer', a B-corp and social organization focusing on community development, leadership, and transforming the social narrative. He works to bridge gaps between different social sectors and redefine poverty as a lack of social bonds and purpose.",
+      "source_url": "https://creerhacer.com/nosotros/"
+    },
+    {
+      "period": "Public Speaking",
+      "location": "Various",
+      "event": "Delivered influential TEDx talks, including TEDxRiodelaPlata (2014) on redefining poverty and TEDxSanIsidro (2022) on social inclusion.",
+      "source_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs"
+    }
+  ]
+}

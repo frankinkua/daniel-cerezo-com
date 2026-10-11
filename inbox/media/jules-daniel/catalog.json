@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "generated_at": "2024-05-18T12:00:00Z",
+  "subject": "Daniel Cerezo",
+  "search_queries": [
+    "Daniel Cerezo CreerHacer",
+    "Daniel Cerezo TEDx",
+    "Daniel Cerezo Bajo Boulogne",
+    "Daniel Cerezo La Cava"
+  ],
+  "items": [
+    {
+      "id": "tedx-pobreza",
+      "type": "video",
+      "title": "¿Qué es la pobreza? | Daniel Cerezo | TEDxRiodelaPlata",
+      "source_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "asset_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "local_path": "",
+      "person": "Daniel Cerezo",
+      "tags": ["TEDx", "poverty", "resilience", "Bajo Boulogne", "La Cava", "music", "CreerHacer"],
+      "related_tags": ["TEDxRiodelaPlata", "pobreza", "liderazgo"],
+      "publisher": "TEDx Talks",
+      "date": "2014-10-20",
+      "retrieved_at": "2024-05-18",
+      "rights_status": "youtube_embed",
+      "rights_evidence": "Official TEDx YouTube Channel (YouTube Standard License/CC)",
+      "caption": "Daniel Cerezo at TEDxRiodelaPlata discussing the true meaning of poverty and his journey.",
+      "identity_evidence": "Verified TEDx speaker."
+    },
+    {
+      "id": "tedx-inclusion",
+      "type": "video",
+      "title": "La hipocresía de la inclusión social | Daniel Cerezo | TEDxSanIsidro",
+      "source_url": "https://www.youtube.com/watch?v=VUI0K4rIZU0",
+      "asset_url": "https://www.youtube.com/watch?v=VUI0K4rIZU0",
+      "local_path": "",
+      "person": "Daniel Cerezo",
+      "tags": ["TEDx", "inclusion", "society", "CreerHacer", "Bajo Boulogne"],
+      "related_tags": ["TEDxSanIsidro", "inclusión social"],
+      "publisher": "TEDx Talks",
+      "date": "2022-01-10",
+      "retrieved_at": "2024-05-18",
+      "rights_status": "youtube_embed",
+      "rights_evidence": "Official TEDx YouTube Channel (YouTube Standard License/CC)",
+      "caption": "Daniel Cerezo at TEDxSanIsidro discussing social inclusion.",
+      "identity_evidence": "Verified TEDx speaker."
+    },
+    {
+      "id": "img-creerhacer-community",
+      "type": "image",
+      "title": "Daniel Cerezo with community members",
+      "source_url": "https://creerhacer.com/wp-content/uploads/2018/08/JOH6172.jpg",
+      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/08/JOH6172.jpg",
+      "local_path": "inbox/media/jules-daniel/images/creerhacer_community.jpg",
+      "person": "Daniel Cerezo",
+      "tags": ["community", "CreerHacer", "Bajo Boulogne", "leadership"],
+      "related_tags": ["comunidad", "trabajo social"],
+      "publisher": "CreerHacer",
+      "date": "2018-08-01",
+      "retrieved_at": "2024-10-11",
+      "rights_status": "official_press_or_reference",
+      "rights_evidence": "Downloaded from official foundation website (creerhacer.com) explicitly permissible for press/reference.",
+      "caption": "Daniel Cerezo interacting with community members, exemplifying his work at CreerHacer.",
+      "identity_evidence": "Visually identifiable from official organization website."
+    }
+  ]
+}
