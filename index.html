@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Cerezo — Líder Social, Conferencista & Consultor de Cultura Organizacional</title>
+  <meta name="description" content="Sitio oficial de Daniel Cerezo. Conferencias de alto impacto, consultoría en cultura organizacional, derechos humanos e inclusión social. Autor de 'Viaje a mi interior'.">
+  <meta name="keywords" content="Daniel Cerezo, CreerHacer, Conferencista, TEDx, Qué es el éxito, Liderazgo Empático, Cultura Organizacional, Derechos Humanos, Inclusión Social, Speaker">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Daniel Cerezo — Líder Social & Conferencista">
+  <meta property="og:description" content="Transformando organizaciones y comunidades a través de la empatía, la dignidad humana y el liderazgo con propósito.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daniel-cerezo.com">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            accent: {
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .hero-gradient {
+      background: radial-gradient(circle at 50% 20%, rgba(20, 184, 166, 0.15) 0%, rgba(15, 23, 42, 1) 70%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(20, 184, 166, 0.4);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-white">
+
+  <!-- TOP STATUS BANNER -->
+  <div class="bg-gradient-to-r from-teal-900 via-slate-900 to-amber-950 text-xs py-2 px-4 text-center border-b border-teal-500/20 text-slate-300 flex items-center justify-center gap-2">
+    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-teal-500/20 text-teal-300 border border-teal-500/30">Sitio Oficial</span>
+    <span>Sitio web en constante evolución · Contrataciones para conferencias y consultoría 2026/2027 abiertas</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500 to-emerald-700 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-teal-500/20 group-hover:scale-105 transition-transform">
+          DC
+        </div>
+        <div>
+          <span class="font-display font-bold text-xl text-white tracking-tight block">Daniel Cerezo</span>
+          <span class="text-xs text-teal-400 font-medium tracking-wide uppercase block">Líder Social & Conferencista</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#historia" class="hover:text-teal-400 transition-colors">Biografía</a>
+        <a href="#conferencias" class="hover:text-teal-400 transition-colors">Conferencias</a>
+        <a href="#consultoria" class="hover:text-teal-400 transition-colors">Consultoría</a>
+        <a href="#tedx" class="hover:text-teal-400 transition-colors">Charlas TEDx</a>
+        <a href="#libro" class="hover:text-teal-400 transition-colors">Libro</a>
+        <a href="#contacto" class="hover:text-teal-400 transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#contacto" class="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 text-sm">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Reservar Conferencia</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-3 pb-6 space-y-3">
+      <a href="#historia" class="block text-slate-300 hover:text-teal-400 py-1">Biografía</a>
+      <a href="#conferencias" class="block text-slate-300 hover:text-teal-400 py-1">Conferencias</a>
+      <a href="#consultoria" class="block text-slate-300 hover:text-teal-400 py-1">Consultoría</a>
+      <a href="#tedx" class="block text-slate-300 hover:text-teal-400 py-1">Charlas TEDx</a>
+      <a href="#libro" class="block text-slate-300 hover:text-teal-400 py-1">Libro</a>
+      <a href="#contacto" class="block text-teal-400 font-semibold py-1">Reservar Fecha</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-24 pb-20 hero-gradient overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-300 text-xs font-medium">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-teal-400"></i>
+            <span>Conferencista Internacional · Fundador de CreerHacer</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+            Transformar la realidad desde la <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-300">empatía y la dignidad</span>.
+          </h1>
+
+          <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+            Uniendo el mundo corporativo con la realidad social. Con más de 15 años de trayectoria inspirando a líderes, comités ejecutivos y comunidades en América Latina y Europa a liderar con propósito, integrar la diversidad y resignificar el concepto del éxito.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#conferencias" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-7 py-3.5 rounded-xl transition-all shadow-xl shadow-teal-500/20 text-base">
+              <i data-lucide="mic" class="w-5 h-5"></i>
+              <span>Conferencias & Charlas</span>
+            </a>
+            <a href="#tedx" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-7 py-3.5 rounded-xl transition-all text-base">
+              <i data-lucide="play-circle" class="w-5 h-5 text-red-400"></i>
+              <span>Ver Charlas TEDx</span>
+            </a>
+          </div>
+
+          <!-- Highlight Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-800/80">
+            <div>
+              <div class="font-display text-2xl sm:text-3xl font-bold text-white">+500</div>
+              <div class="text-xs text-slate-400">Conferencias globales</div>
+            </div>
+            <div>
+              <div class="font-display text-2xl sm:text-3xl font-bold text-white">+150</div>
+              <div class="text-xs text-slate-400">Empresas & ONGs</div>
+            </div>
+            <div>
+              <div class="font-display text-2xl sm:text-3xl font-bold text-teal-400">2x</div>
+              <div class="text-xs text-slate-400">Charlas TEDx virales</div>
+            </div>
+            <div>
+              <div class="font-display text-2xl sm:text-3xl font-bold text-white">Autor</div>
+              <div class="text-xs text-slate-400">Editorial Planeta</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Feature Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md bg-slate-900/90 rounded-2xl border border-slate-800 p-8 shadow-2xl backdrop-blur-xl">
+            <div class="absolute -top-4 -right-4 bg-teal-500 text-slate-950 px-3.5 py-1 rounded-full text-xs font-bold shadow-lg">
+              Propósito & Impacto
+            </div>
+            
+            <div class="flex items-center gap-4 pb-6 border-b border-slate-800">
+              <div class="w-14 h-14 rounded-full bg-slate-800 border-2 border-teal-500/50 flex items-center justify-center text-teal-400 font-display font-bold text-2xl">
+                DC
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white">Daniel Cerezo</h3>
+                <p class="text-xs text-slate-400">Pianista · Psicólogo Social · Emprendedor Social</p>
+              </div>
+            </div>
+
+            <blockquote class="py-6 text-slate-300 italic text-sm leading-relaxed">
+              "La pobreza no es solo la falta de recursos económicos. La pobreza más profunda y dolorosa es la falta de oportunidades, de afecto, de escucha y de dignidad."
+            </blockquote>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-center gap-3 text-xs text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-800">
+                <i data-lucide="check-circle" class="w-4 h-4 text-teal-400 shrink-0"></i>
+                <span>Orador principal en foros ejecutivos y graduaciones</span>
+              </div>
+              <div class="flex items-center gap-3 text-xs text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-800">
+                <i data-lucide="check-circle" class="w-4 h-4 text-teal-400 shrink-0"></i>
+                <span>Talleres de cultura corporativa, empatía y resiliencia</span>
+              </div>
+              <div class="flex items-center gap-3 text-xs text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-800">
+                <i data-lucide="check-circle" class="w-4 h-4 text-teal-400 shrink-0"></i>
+                <span>Programas de integración social y diversidad corporativa</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span>Buenos Aires & Internacional</span>
+              <a href="#contacto" class="text-teal-400 hover:text-teal-300 font-semibold flex items-center gap-1">
+                Contactar <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BIOGRAFÍA / HISTORIA -->
+  <section id="historia" class="py-24 bg-slate-900/60 border-t border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="text-teal-400 text-xs font-semibold uppercase tracking-wider block mb-2">Trayectoria & Filosofía</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">De la Villa 21-24 a los escenarios del mundo</h2>
+        <p class="text-slate-400 mt-4 leading-relaxed">
+          Una vida dedicada a demostrar que el arte, la empatía y la educación pueden tender puentes entre realidades que parecían irreconciliables.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-6">
+            <i data-lucide="music" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Músico & Transformador Social</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Nacido y criado en la Villa 21-24 de Barracas, Buenos Aires. Descubrió en el piano y la música clásica un canal de expresión y disciplina que transformó su destino y el de cientos de jóvenes en su comunidad.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Fundador de CreerHacer</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Organización social que diseña y ejecuta proyectos de integración, capacitación y desarrollo humano, conectando a líderes comunitarios con empresas, instituciones académicas y organismos multilaterales.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Liderazgo Corporativo & ESG</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Asesora a directores de recursos humanos, CEOs y comités de sostenibilidad. Ayuda a corporaciones de primer nivel a repensar el bienestar laboral, la diversidad real y el impacto social como pilares del negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFERENCIAS & KEYNOTES -->
+  <section id="conferencias" class="py-24 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-teal-400 text-xs font-semibold uppercase tracking-wider block mb-2">Conferencias Magistrales</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">Charlas de Alto Impacto</h2>
+          <p class="text-slate-400 mt-2 max-w-xl">
+            Ponencias diseñadas para inspirar, sacudir paradigmas y movilizar a equipos hacia la acción con compromiso ético.
+          </p>
+        </div>
+        <a href="#contacto" class="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-semibold text-sm">
+          <span>Consultar disponibilidad y tarifas</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Charla 1 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 card-hover relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-teal-500/5 rounded-full blur-2xl"></div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Charla Insignia</span>
+            <span class="text-xs text-slate-500 font-mono">60 - 90 min</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-white mb-3">¿Qué es el éxito?</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Una reflexión profunda sobre el sentido del logro y la felicidad. Desafía el modelo tradicional de éxito centrado exclusivamente en el poder o el patrimonio, proponiendo un liderazgo medido por el impacto positivo en el entorno y las relaciones humanas.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-400"></i> Resignificación del propósito profesional y personal</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-400"></i> Alineación de valores individuales con la cultura corporativa</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-400"></i> Prevención del desgaste emocional y búsqueda de sentido</li>
+          </ul>
+        </div>
+
+        <!-- Charla 2 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 card-hover relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl"></div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Liderazgo & Cultura</span>
+            <span class="text-xs text-slate-500 font-mono">60 - 90 min</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-white mb-3">Liderazgo Empático y Gestión de la Diversidad</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Cómo construir puentes en organizaciones complejas y heterogéneas. Brinda herramientas prácticas para que los líderes escuchen activamente, gestionen desde la empatía y desactiven los sesgos inconscientes que frenan la innovación.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Creación de entornos psicológicamente seguros</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Integración real de talentos diversos</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Liderazgo horizontal y comunicación sin barreras</li>
+          </ul>
+        </div>
+
+        <!-- Charla 3 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 card-hover relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-2xl"></div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Bienestar & Clima</span>
+            <span class="text-xs text-slate-500 font-mono">60 min</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-white mb-3">La Pobreza Invisible en las Organizaciones</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Explora la soledad, el aislamiento y la falta de pertenencia que muchas personas experimentan dentro de empresas con altos presupuestos. Enseña a detectar síntomas de desconexión y restaurar la calidez en los equipos.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Diagnóstico de la desconexión emocional en el trabajo</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> El valor del reconocimiento genuino</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Reconstrucción de vínculos de confianza</li>
+          </ul>
+        </div>
+
+        <!-- Charla 4 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 card-hover relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-2xl"></div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">Resiliencia & Equipos</span>
+            <span class="text-xs text-slate-500 font-mono">60 - 90 min</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-white mb-3">Resiliencia y Trabajo en Situaciones de Emergencia</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Metodologías probadas en comunidades vulnerables y entornos de alta incertidumbre, aplicadas a equipos corporativos bajo presión extrema, reestructuraciones o transformación digital.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Gestión de la frustración y el cambio</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Cohesión colectiva ante crisis imprevistas</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Creatividad con recursos limitados</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARLAS TEDX (MEDIA) -->
+  <section id="tedx" class="py-24 bg-slate-900/80 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-red-400 text-xs font-semibold uppercase tracking-wider block mb-2">Charlas Globales</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">Charlas TEDx Destacadas</h2>
+        <p class="text-slate-400 mt-3">
+          Presentaciones que conmovieron a millones de espectadores, transmitiendo lecciones de vida, dignidad y transformación.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- TEDx 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover">
+          <div class="aspect-video bg-slate-800 relative flex items-center justify-center group">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="w-16 h-16 rounded-full bg-red-600 group-hover:bg-red-500 text-white flex items-center justify-center transition-all shadow-xl group-hover:scale-110 z-10">
+              <i data-lucide="play" class="w-7 h-7 fill-current ml-1"></i>
+            </div>
+            <span class="absolute top-4 left-4 z-10 px-3 py-1 rounded bg-red-600/90 text-white text-xs font-bold uppercase tracking-wider">TEDx</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl font-bold text-white mb-2">TEDx: ¿Qué es el éxito?</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              La charla que consolidó a Daniel Cerezo como orador internacional. Una narración íntima y desgarradora sobre cómo encontrar el verdadero propósito cuando todo parece estar en contra.
+            </p>
+            <a href="https://www.youtube.com/results?search_query=daniel+cerezo+tedx+que+es+el+exito" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-teal-400 hover:text-teal-300">
+              <span>Ver charla completa en YouTube</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- TEDx 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover">
+          <div class="aspect-video bg-slate-800 relative flex items-center justify-center group">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="w-16 h-16 rounded-full bg-red-600 group-hover:bg-red-500 text-white flex items-center justify-center transition-all shadow-xl group-hover:scale-110 z-10">
+              <i data-lucide="play" class="w-7 h-7 fill-current ml-1"></i>
+            </div>
+            <span class="absolute top-4 left-4 z-10 px-3 py-1 rounded bg-red-600/90 text-white text-xs font-bold uppercase tracking-wider">TEDx</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl font-bold text-white mb-2">TEDx: La pobreza invisible</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              Una mirada disruptiva sobre la necesidad de escuchar, abrazar y dignificar a quienes nos rodean, derribando los prejuicios sociales y corporativos.
+            </p>
+            <a href="https://www.youtube.com/results?search_query=daniel+cerezo+tedx+pobreza+invisible" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-teal-400 hover:text-teal-300">
+              <span>Ver charla completa en YouTube</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULTORÍA B2B -->
+  <section id="consultoria" class="py-24 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <span class="text-teal-400 text-xs font-semibold uppercase tracking-wider block mb-2">Soluciones Corporativas</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">Consultoría y Talleres In-Company</h2>
+        <p class="text-slate-400 mt-4 leading-relaxed">
+          Procesos estructurados y medibles para transformar la cultura, mejorar el clima de trabajo y consolidar la responsabilidad social y los derechos humanos en su organización.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 card-hover">
+          <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center mb-5">
+            <i data-lucide="users" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Clima Organizacional & Integración</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">
+            Diagnóstico e intervención en equipos con desafíos de comunicación, falta de compromiso o fricciones interculturales.
+          </p>
+          <span class="text-xs font-medium text-teal-400">Talleres modulares de 1 a 3 jornadas</span>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 card-hover">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Auditoría en DDHH & Diversidad</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">
+            Evaluación de prácticas internas y cumplimiento de estándares internacionales de derechos humanos, inclusión y sostenibilidad ESG.
+          </p>
+          <span class="text-xs font-medium text-emerald-400">Informes para Directorio y Stakeholders</span>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 card-hover">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-5">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Programas de Alto Rendimiento</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">
+            Jornadas ejecutivas inmersivas para directores y equipos de alta exigencia, combinando impacto social, reflexión ética y foco en resultados.
+          </p>
+          <span class="text-xs font-medium text-amber-400">Retiros y capacitaciones a medida</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIBRO -->
+  <section id="libro" class="py-20 bg-slate-900/40 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-teal-950/40 border border-slate-800 rounded-3xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-12">
+        <div class="w-full lg:w-1/3 flex justify-center">
+          <div class="w-56 h-80 bg-slate-800 rounded-xl shadow-2xl border-2 border-teal-500/30 flex flex-col justify-between p-6 text-center transform hover:rotate-1 transition-transform">
+            <div class="text-xs font-bold text-teal-400 uppercase tracking-widest">Editorial Planeta</div>
+            <div class="my-auto">
+              <h4 class="font-display font-extrabold text-2xl text-white">VIAJE A MI INTERIOR</h4>
+              <p class="text-xs text-slate-400 mt-2">Daniel Cerezo</p>
+            </div>
+            <div class="text-xs text-slate-500">Superación · Dignidad · Vínculos</div>
+          </div>
+        </div>
+        <div class="w-full lg:w-2/3 space-y-5 text-center lg:text-left">
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Publicación Editorial</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Libro: "Viaje a mi interior"</h2>
+          <p class="text-slate-300 text-base leading-relaxed">
+            Una obra honesta y conmovedora donde Daniel comparte su historia en primera persona: las pérdidas tempranas, el descubrimiento de la vocación, la música como salvavidas y las claves para construir una vida auténtica sin renunciar a las propias raíces.
+          </p>
+          <div class="pt-2">
+            <a href="#contacto" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-xl border border-slate-700 text-sm transition-all">
+              <i data-lucide="book-open" class="w-4 h-4 text-teal-400"></i>
+              <span>Solicitar ejemplares o lectura corporativa</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO / BOOKING -->
+  <section id="contacto" class="py-24 bg-slate-950 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-teal-400 text-xs font-semibold uppercase tracking-wider block">Contacto Directo & Booking</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">Hablemos de su próximo evento o proyecto</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Para contrataciones de conferencias magistrales, talleres in-company, consultoría en derechos humanos o entrevistas de prensa, complete el formulario o escríbanos directamente.
+          </p>
+
+          <div class="space-y-4 pt-4">
+            <div class="flex items-center gap-4 text-slate-300 text-sm">
+              <div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-teal-400 shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Email institucional</div>
+                <a href="mailto:contacto@daniel-cerezo.com" class="hover:text-teal-400 transition-colors font-medium">contacto@daniel-cerezo.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-300 text-sm">
+              <div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-teal-400 shrink-0">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Dominio oficial</div>
+                <span class="font-medium">daniel-cerezo.com</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-300 text-sm">
+              <div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-teal-400 shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Ubicación & Cobertura</div>
+                <span class="font-medium">Buenos Aires, Argentina · Conferencias globales</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-10 shadow-xl">
+            <h3 class="text-xl font-bold text-white mb-6">Solicitud de Conferencia o Consultoría</h3>
+            
+            <form id="contact-form" class="space-y-5" onsubmit="event.preventDefault(); alert('¡Gracias por su mensaje! El equipo de Daniel Cerezo se pondrá en contacto a la brevedad.');">
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-medium text-slate-400 mb-1.5">Nombre y Apellido *</label>
+                  <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-500" placeholder="Ej. Valeria Gómez">
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-slate-400 mb-1.5">Empresa u Organización *</label>
+                  <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-500" placeholder="Ej. Fundación / Empresa">
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-medium text-slate-400 mb-1.5">Correo Electrónico *</label>
+                  <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-500" placeholder="nombre@empresa.com">
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-slate-400 mb-1.5">Tipo de Requerimiento *</label>
+                  <select required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-teal-500">
+                    <option value="conferencia">Conferencia Magistral / Keynote</option>
+                    <option value="taller">Taller In-Company / Clima Laboral</option>
+                    <option value="consultoria">Consultoría en DDHH & Sostenibilidad</option>
+                    <option value="evento">Evento Ejecutivo / Retiro</option>
+                    <option value="prensa">Prensa o Entrevistas</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-400 mb-1.5">Detalles del Evento o Proyecto *</label>
+                <textarea rows="4" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-500" placeholder="Describa la fecha estimada, cantidad de asistentes, formato (presencial/virtual) y objetivos..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg shadow-teal-500/20 text-sm flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Enviar Solicitud de Reserva</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-7 h-7 rounded-lg bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 font-bold text-xs">
+          DC
+        </div>
+        <span>© 2026 Daniel Cerezo. Todos los derechos reservados.</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#historia" class="hover:text-slate-400 transition-colors">Biografía</a>
+        <a href="#conferencias" class="hover:text-slate-400 transition-colors">Conferencias</a>
+        <a href="#consultoria" class="hover:text-slate-400 transition-colors">Consultoría</a>
+        <a href="#contacto" class="hover:text-slate-400 transition-colors">Contacto</a>
+      </div>
+
+      <div class="text-slate-600">
+        daniel-cerezo.com
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
