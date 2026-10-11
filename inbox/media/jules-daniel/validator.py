@@ -2,7 +2,8 @@ import json
 import os
 import sys
 import datetime
-from urllib.error import URLError, HTTPError
+from urllib.parse import urlparse
+import argparse
 
 def validate_json_schema(filepath):
     print(f"Validating {filepath}...")
@@ -16,23 +17,29 @@ def validate_json_schema(filepath):
         return None
 
 def validate_url(url):
-    if not url.startswith("http"):
-        print(f"  - [ERROR] Invalid URL format: {url}")
-        return False
-    return True
-
-def validate_date_not_future(date_str):
     try:
-        # handle YYYY-MM-DD or YYYY-MM-DDTHH:MM:SSZ
+        result = urlparse(url)
+        if all([result.scheme, result.netloc]) and result.scheme in ["http", "https"]:
+            return True
+        else:
+            print(f"  - [ERROR] Invalid URL format: {url}")
+            return False
+    except ValueError:
+        print(f"  - [ERROR] Malformed URL string: {url}")
+        return False
+
+def validate_date_not_future(date_str, as_of_date=None):
+    try:
         if "T" in date_str:
             dt = datetime.datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%SZ")
+        elif len(date_str) == 7: # YYYY-MM
+             dt = datetime.datetime.strptime(date_str, "%Y-%m")
         else:
             dt = datetime.datetime.strptime(date_str, "%Y-%m-%d")
 
-        # Hardcode "current date" as requested to 2026-10-11 23:59:59 for the test
-        current_date = datetime.datetime(2026, 10, 11, 23, 59, 59)
+        current_date = as_of_date if as_of_date else datetime.datetime.utcnow()
         if dt > current_date:
-            print(f"  - [ERROR] Date {date_str} is in the future relative to 2026-10-11.")
+            print(f"  - [ERROR] Date {date_str} is in the future relative to {current_date.strftime('%Y-%m-%d')}.")
             return False
         return True
     except Exception as e:
@@ -40,10 +47,17 @@ def validate_date_not_future(date_str):
         return False
 
 def main():
-    base_dir = os.path.dirname(__file__)
-    if not base_dir:
-        base_dir = "."
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--as-of", type=str, help="Date to use as 'current' (YYYY-MM-DD)", default=None)
+    args = parser.parse_args()
 
+    as_of_dt = None
+    if args.as_of:
+        as_of_dt = datetime.datetime.strptime(args.as_of, "%Y-%m-%d")
+        # Ensure it covers end of the given day if comparing
+        as_of_dt = as_of_dt.replace(hour=23, minute=59, second=59)
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     catalog_path = os.path.join(base_dir, 'catalog.json')
     bio_path = os.path.join(base_dir, 'biography.json')
     aliases_path = os.path.join(base_dir, 'aliases.json')
@@ -59,10 +73,23 @@ def main():
                 print(f"  - [ERROR] Missing required field '{field}' in catalog.")
                 errors += 1
 
-        if not validate_date_not_future(catalog.get("generated_at", "1970-01-01")):
+        if not validate_date_not_future(catalog.get("generated_at", "1970-01-01"), as_of_dt):
             errors += 1
 
         for item in catalog.get("items", []):
+            item_id = item.get("id", "UNKNOWN")
+
+            # Required fields for item
+            required_item_fields = ["id", "type", "title", "source_url", "asset_url", "local_path",
+                                    "person", "tags", "related_tags", "publisher", "date",
+                                    "retrieved_at", "rights_status", "rights_evidence",
+                                    "caption", "identity_evidence"]
+
+            for f in required_item_fields:
+                if f not in item:
+                    print(f"  - [ERROR] Missing required field '{f}' in item {item_id}.")
+                    errors += 1
+
             url = item.get("source_url")
             if url:
                 if not validate_url(url):
@@ -70,20 +97,40 @@ def main():
 
             retrieved = item.get("retrieved_at")
             if retrieved:
-                if not validate_date_not_future(retrieved):
+                if not validate_date_not_future(retrieved, as_of_dt):
                     errors += 1
 
             local_path = item.get("local_path")
-            if local_path:
-                full_path = os.path.join(os.getcwd(), local_path)
-                if not os.path.exists(full_path):
-                    print(f"  - [ERROR] Missing local file: {local_path}")
-                    errors += 1
-
             rights_status = item.get("rights_status")
-            if rights_status not in ["reference_only", "youtube_embed", "public_domain", "cc_by"]:
+
+            if rights_status not in ["reference_only", "youtube_embed", "public_domain", "cc_by", "official_press_or_reference"]:
                 print(f"  - [ERROR] Unsafe or unrecognized rights_status: {rights_status}")
                 errors += 1
+
+            if rights_status == "reference_only" and local_path != "":
+                print(f"  - [ERROR] reference_only items must NOT have a local_path (found: {local_path} in {item_id}).")
+                errors += 1
+
+            if local_path != "":
+                # Path traversal guard
+                if ".." in local_path or local_path.startswith("/"):
+                    print(f"  - [ERROR] Path traversal detected in local_path: {local_path}")
+                    errors += 1
+                else:
+                    full_path = os.path.join(base_dir, "..", "..", "..", local_path)
+                    if not os.path.exists(full_path):
+                         # check if relative to script dir works
+                         full_path_script = os.path.join(base_dir, local_path)
+                         if not os.path.exists(full_path_script):
+                             print(f"  - [ERROR] Missing local file: {local_path}")
+                             errors += 1
+
+                # Must have explicit evidence if a file is hosted locally
+                rights_evidence = item.get("rights_evidence", "")
+                if not rights_evidence or rights_status not in ["public_domain", "cc_by", "official_press_or_reference"]:
+                     print(f"  - [ERROR] Local files must have explicit permissive rights_status and rights_evidence (item {item_id}).")
+                     errors += 1
+
     else:
         errors += 1
 

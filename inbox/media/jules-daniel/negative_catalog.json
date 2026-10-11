@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "generated_at": "2030-01-01",
+  "subject": "Daniel Cerezo",
+  "search_queries": [],
+  "items": [
+    {
+      "id": "bad-url-test",
+      "type": "video",
+      "title": "Bad URL",
+      "source_url": "httpx://bad.com",
+      "asset_url": "httpx://bad.com",
+      "local_path": "../../../../etc/passwd",
+      "person": "Daniel",
+      "tags": [],
+      "related_tags": [],
+      "publisher": "Bad",
+      "date": "2020-01-01",
+      "retrieved_at": "2020-01-01",
+      "rights_status": "reference_only",
+      "rights_evidence": "none",
+      "caption": "test",
+      "identity_evidence": "test"
+    }
+  ]
+}

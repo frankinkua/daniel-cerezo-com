@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-11T12:00:00Z",
+  "generated_at": "2026-10-11",
   "subject": "Daniel Cerezo",
   "search_queries": [
     "Daniel Cerezo CreerHacer",
@@ -38,7 +38,7 @@
       "tags": ["TEDx", "inclusion", "society", "CreerHacer", "Bajo Boulogne"],
       "related_tags": ["TEDxSanIsidro", "inclusión social"],
       "publisher": "TEDx Talks",
-      "date": "2021-11-01",
+      "date": "2021-11",
       "retrieved_at": "2026-10-11",
       "rights_status": "reference_only",
       "rights_evidence": "TED Policy restricts promotional reuse; referencing canonical source.",
@@ -56,12 +56,12 @@
       "tags": ["community", "CreerHacer", "Bajo Boulogne", "leadership"],
       "related_tags": ["comunidad", "trabajo social"],
       "publisher": "CreerHacer",
-      "date": "2018-08-01",
+      "date": "2018-08",
       "retrieved_at": "2026-10-11",
       "rights_status": "reference_only",
       "rights_evidence": "Official hosting is not license. No genuine permission statement located. Reference only.",
       "caption": "Daniel Cerezo interacting with community members, exemplifying his work at CreerHacer.",
-      "identity_evidence": "Visually identifiable from official organization website."
+      "identity_evidence": "Lead needing human confirmation, not visually identified."
     }
   ]
 }
