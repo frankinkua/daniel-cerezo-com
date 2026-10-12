@@ -1,15 +1,15 @@
 # Research Packet: TED and TEDx canonical evidence for Daniel Cerezo
 
-This packet enriches the existing TED/TEDx references for Daniel Cerezo with verifiable metadata (timestamps, duration, upload dates, subtitle availability) and includes newly discovered canonical appearances.
+This packet enriches the existing TED/TEDx references for Daniel Cerezo with verifiable metadata (timestamps, duration, subtitle availability) and includes newly discovered canonical appearances. Note that upload dates have been removed as they do not accurately reflect event-delivery dates.
 
 ## Review Table
 
 | ID | Type | Title | Notes / Action |
 |---|---|---|---|
-| `tedx-poverty-2014-yt` | Video | ¿Qué es la pobreza? | Enriched metadata (duration: 1083s, uploaded 2014-10-20). EN/ES captions available. Duplicate/enrichment of `tedx-poverty-2014`. |
-| `tedx-inclusion-2021-yt` | Video | La hipocresía de la inclusión social | Found canonical YouTube URL (VUI0K4rIZU0), uploaded 2022-01-10. Duplicate/enrichment of `tedx-inclusion-2021`. |
-| `tedx-poverty-eldorado-2015` | Video | ¿Qué es la pobreza? (Eldorado) | Syndicated/re-uploaded version of the 2014 talk. Duration matches exactly (1083s). Duplicate of `tedx-poverty-2014`. |
-| `ted-ed-poverty-2016` | Video | Qué es la pobreza (TED-Ed) | **New** animated video by TED-Ed based on his talk. Uploaded 2016-06-07. Duration 914s. EN/ES captions available. |
+| `tedx-poverty-2014-yt` | Video | ¿Qué es la pobreza? | **Baseline Enrichment.** Enriched metadata (duration: 1083s). EN/ES captions available. Duplicate/enrichment of `tedx-poverty-2014`. |
+| `tedx-inclusion-2021-yt` | Video | La hipocresía de la inclusión social | **Baseline Enrichment.** Found canonical YouTube URL (VUI0K4rIZU0). Duplicate/enrichment of `tedx-inclusion-2021`. |
+| `tedx-poverty-eldorado-2015` | Video | ¿Qué es la pobreza? (Eldorado) | **New Reference Hypothesis.** Hypothesized syndicated/re-uploaded version of the 2014 talk. Duration matches exactly (1083s), but confidence is medium as duration alone cannot prove identical performance without footage review. Duplicate of `tedx-poverty-2014` (unconfirmed). |
+| `ted-ed-poverty-2016` | Video | Qué es la pobreza (TED-Ed) | **New Reference.** Animated video by TED-Ed based on his ideas. Duration 914s. EN/ES captions available. Not a direct recording of Daniel. |
 
 ## Proposed Website Uses
 
@@ -19,7 +19,7 @@ This packet enriches the existing TED/TEDx references for Daniel Cerezo with ver
 ## Limitations and Notes
 
 - **Rights Status:** All items are strictly `reference_only`. According to TED's usage policy, downloading and rehosting is not permitted without explicit licensing, so no local media has been downloaded.
-- **YouTube Metadata limitations:** TED's official speaker pages lack raw duration metrics, which are easier to retrieve via YouTube canonical links, hence the reliance on the YouTube metadata.
+- **YouTube Metadata limitations:** TED's official speaker pages lack raw duration metrics, which are easier to retrieve via YouTube canonical links. Upload dates from YouTube do not represent the event date, so they have been omitted.
 - **Subtitle Availability:** Subtitles were checked dynamically and may change.
 
 ## Verification Commands
