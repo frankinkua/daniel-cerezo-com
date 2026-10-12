@@ -1,0 +1,43 @@
+{
+  "queries": [
+    "\"Daniel Cerezo\" entrevista comunidad inclusion",
+    "\"Daniel Cerezo\" interview OR entrevista OR podcast",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo&media=podcast&entity=podcastEpisode",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo+pobreza+comunidad&media=podcast&entity=podcastEpisode",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo+comunidad&media=podcast&entity=podcastEpisode",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo+musica+comunidad&media=podcast&entity=podcastEpisode"
+  ],
+  "visited": [
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+comunidad&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found Hablar Sobre Hablar and Mundo Cero Referentes"
+    },
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+pobreza&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found Liderazgo y Motivaci\u00f3n and Ponerse en Marcha"
+    },
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+inclusion&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found El Aprendiz and Aprendedoras Seriales"
+    },
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+Creer+Hacer&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found Vero Araujo El Lado Humano"
+    }
+  ],
+  "outcomes": {
+    "Google Search": "Blocked/No useful results in standard web search",
+    "DuckDuckGo": "Minimal direct matches, needed domain specific search",
+    "Apple Podcasts API": "Highly successful. Found multiple long-form interviews explicitly naming Daniel Cerezo (musician, social psychologist, Creer Hacer, poverty, community)."
+  },
+  "rejected_leads": [
+    "Podcasts mentioning other people named Javier Cerezo or Daniel Sanchez",
+    "Podcasts mentioning 'Daniel Cerezo' as a missionary in China (different person)",
+    "Podcasts where 'Cerezo' was mentioned in sports context (Enrique Cerezo from Atletico Madrid)"
+  ],
+  "tool_limitations": "Direct web search via DuckDuckGo/Google didn't surface interviews clearly. Had to pivot to Apple Podcasts API to find audio interviews."
+}
