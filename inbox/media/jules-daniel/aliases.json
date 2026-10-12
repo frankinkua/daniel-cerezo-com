@@ -1,0 +1,11 @@
+{
+  "aliases": {
+    "poverty": ["pobreza", "pobreza multidimensional"],
+    "inclusion": ["inclusión social", "inclusión"],
+    "leadership": ["liderazgo", "líder social"],
+    "community": ["comunidad", "trabajo comunitario", "trabajo social"],
+    "resilience": ["resiliencia", "superación"],
+    "music": ["música", "piano clásico"],
+    "happiness": ["felicidad", "gerencia de felicidad"]
+  }
+}

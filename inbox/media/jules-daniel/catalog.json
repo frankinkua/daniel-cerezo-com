@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-11",
+  "subject": "Daniel Cerezo",
+  "search_queries": [
+    "Daniel Cerezo CreerHacer",
+    "Daniel Cerezo TEDx",
+    "Daniel Cerezo Bajo Boulogne",
+    "Daniel Cerezo La Cava"
+  ],
+  "items": [
+    {
+      "id": "tedx-pobreza",
+      "type": "video",
+      "title": "¿Qué es la pobreza? | Daniel Cerezo | TEDxRiodelaPlata",
+      "source_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "asset_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "local_path": "",
+      "person": "Daniel Cerezo",
+      "tags": ["TEDx", "poverty", "resilience", "Bajo Boulogne", "La Cava", "music", "CreerHacer"],
+      "related_tags": ["TEDxRiodelaPlata", "pobreza", "liderazgo"],
+      "publisher": "TEDx Talks",
+      "date": "2014-10-20",
+      "retrieved_at": "2026-10-11",
+      "rights_status": "reference_only",
+      "rights_evidence": "TED Policy restricts promotional reuse; referencing canonical source.",
+      "caption": "Daniel Cerezo at TEDxRiodelaPlata discussing the true meaning of poverty and his journey.",
+      "identity_evidence": "Verified TEDx speaker."
+    },
+    {
+      "id": "tedx-inclusion",
+      "type": "video",
+      "title": "La hipocresía de la inclusión social | Daniel Cerezo | TEDxSanIsidro",
+      "source_url": "https://www.ted.com/talks/daniel_cerezo_la_hipocresia_de_la_inclusion_social",
+      "asset_url": "https://www.ted.com/talks/daniel_cerezo_la_hipocresia_de_la_inclusion_social",
+      "local_path": "",
+      "person": "Daniel Cerezo",
+      "tags": ["TEDx", "inclusion", "society", "CreerHacer", "Bajo Boulogne"],
+      "related_tags": ["TEDxSanIsidro", "inclusión social"],
+      "publisher": "TEDx Talks",
+      "date": "2021-11",
+      "retrieved_at": "2026-10-11",
+      "rights_status": "reference_only",
+      "rights_evidence": "TED Policy restricts promotional reuse; referencing canonical source.",
+      "caption": "Daniel Cerezo at TEDxSanIsidro discussing social inclusion.",
+      "identity_evidence": "Verified TEDx speaker."
+    },
+    {
+      "id": "img-creerhacer-community",
+      "type": "image",
+      "title": "Unconfirmed community-image lead",
+      "source_url": "https://creerhacer.com/wp-content/uploads/2018/08/JOH6172.jpg",
+      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/08/JOH6172.jpg",
+      "local_path": "",
+      "person": "Daniel Cerezo",
+      "tags": ["community", "CreerHacer", "Bajo Boulogne", "leadership"],
+      "related_tags": ["comunidad", "trabajo social"],
+      "publisher": "CreerHacer",
+      "date": "unknown",
+      "retrieved_at": "2026-10-11",
+      "rights_status": "reference_only",
+      "rights_evidence": "Official hosting is not license. No genuine permission statement located. Reference only.",
+      "caption": "Unconfirmed community-image lead. Date 2018-08 is derived from URL upload path metadata, not known capture/publication date.",
+      "identity_evidence": "Lead needing human confirmation, not visually identified."
+    }
+  ]
+}
