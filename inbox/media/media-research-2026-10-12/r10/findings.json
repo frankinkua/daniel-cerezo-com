@@ -57,7 +57,9 @@
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/",
       "asset_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo-1.png",
-      "canonical_url": "https://creerhacer.com/"
+      "canonical_url": "https://creerhacer.com/",
+      "delivery_status": "permission_pending",
+      "next_action": "Request explicitly licensed press-kit or owner reuse permission before attempting local download."
     },
     {
       "id": "creerhacer-logo-white",
@@ -83,7 +85,9 @@
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/",
       "asset_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo_white-2.png",
-      "canonical_url": "https://creerhacer.com/"
+      "canonical_url": "https://creerhacer.com/",
+      "delivery_status": "permission_pending",
+      "next_action": "Request explicitly licensed press-kit or owner reuse permission before attempting local download."
     },
     {
       "id": "creerhacer-mapa",
@@ -109,7 +113,9 @@
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/nosotros/",
       "asset_url": "https://creerhacer.com/wp-content/uploads/2018/06/mapa-01.png",
-      "canonical_url": "https://creerhacer.com/nosotros/"
+      "canonical_url": "https://creerhacer.com/nosotros/",
+      "delivery_status": "permission_pending",
+      "next_action": "Request explicitly licensed press-kit or owner reuse permission before attempting local download."
     },
     {
       "id": "creerhacer-grafico-programas",
@@ -135,7 +141,9 @@
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/programas/",
       "asset_url": "https://creerhacer.com/wp-content/uploads/2018/08/grafico-programas-01.png",
-      "canonical_url": "https://creerhacer.com/programas/"
+      "canonical_url": "https://creerhacer.com/programas/",
+      "delivery_status": "permission_pending",
+      "next_action": "Request explicitly licensed press-kit or owner reuse permission before attempting local download."
     }
   ]
 }

@@ -6,33 +6,23 @@ def is_valid_access_time(time_str):
     if time_str is None:
         return True
     try:
-        # Handle 'Z' suffix for UTC
         if time_str.endswith('Z'):
             time_str = time_str[:-1] + '+00:00'
         dt = datetime.fromisoformat(time_str)
-        # If it's a naive datetime (date-only), assume UTC for comparison
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         now = datetime.now(timezone.utc)
         if dt > now:
-            return False # Future timestamp
+            return False
         return True
     except ValueError:
-        return False # Invalid format
+        return False
 
 def run_isolated_tests():
-    # Test valid past noon timestamp
     assert is_valid_access_time('2026-10-11T12:00:00Z') == True
-
-    # Test future non-noon timestamp
     assert is_valid_access_time('2027-10-12T13:00:00Z') == False
-
-    # Test null
     assert is_valid_access_time(None) == True
-
-    # Test date-only
     assert is_valid_access_time('2026-10-11') == True
-
     print("Isolated helper tests passed.")
 
 def run_tests():
@@ -41,6 +31,9 @@ def run_tests():
 
     with open('inbox/media/media-research-2026-10-12/r10/search-log.json', 'r') as f:
         search_log = json.load(f)
+
+    with open('inbox/media/media-research-2026-10-12/r10/asset-delivery.json', 'r') as f:
+        delivery_log = json.load(f)
 
     ids = set()
     errors = []
@@ -53,10 +46,17 @@ def run_tests():
 
         # 2. Schema check (basic)
         if item['type'] == 'image':
-            if 'source_url' not in item or 'asset_url' not in item:
-                errors.append(f"Missing source_url or asset_url in {item['id']}")
+            if 'source_url' not in item or 'asset_url' not in item or 'canonical_url' not in item:
+                errors.append(f"Missing source_url, asset_url or canonical_url in {item['id']}")
             if item['published_at'] is not None:
-                errors.append(f"Image {item['id']} has published_at not set to None (invented precision from URL path)")
+                errors.append(f"Image {item['id']} has published_at not set to None")
+
+            if item.get('delivery_status') not in ['downloaded', 'permission_pending', 'access_failed', 'reference_only']:
+                 errors.append(f"Invalid delivery_status in {item['id']}")
+
+            if item.get('delivery_status') in ['permission_pending', 'access_failed', 'reference_only']:
+                 if not item.get('next_action'):
+                     errors.append(f"Missing next_action/blocker for undelivered image {item['id']}")
 
         if item['rights_status'] == 'reference_only':
             if item.get('local_path') is not None:
@@ -72,6 +72,14 @@ def run_tests():
     for log in search_log['log']:
         if not is_valid_access_time(log.get('access_time')):
             errors.append(f"Invalid or future timestamp found in search-log: {log.get('access_time')}")
+
+    # 4. Delivery Log counts
+    image_items = [i for i in findings['items'] if i['type'] == 'image']
+    if len(image_items) != delivery_log.get('discovered_image_count'):
+        errors.append("Mismatch in discovered image count")
+    pending = [i for i in image_items if i.get('delivery_status') == 'permission_pending']
+    if len(pending) != delivery_log.get('permission_pending_count'):
+        errors.append("Mismatch in pending permission image count")
 
     if errors:
         for err in errors:
