@@ -23,7 +23,7 @@
         "social-impact"
       ],
       "related_project": null,
-      "confidence": "high - official channel baseline enrichment",
+      "confidence": "high",
       "verification_status": "verified",
       "rights_status": "reference_only",
       "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
@@ -33,7 +33,8 @@
       "subtitles_available": [
         "es",
         "en"
-      ]
+      ],
+      "confidence_reason": "official channel baseline enrichment"
     },
     {
       "id": "tedx-inclusion-2021-yt",
@@ -53,14 +54,15 @@
         "social-impact"
       ],
       "related_project": null,
-      "confidence": "high - official channel baseline enrichment",
+      "confidence": "high",
       "verification_status": "verified",
       "rights_status": "reference_only",
       "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
       "local_path": null,
       "duplicate_of": "tedx-inclusion-2021",
       "duration": 875,
-      "subtitles_available": []
+      "subtitles_available": [],
+      "confidence_reason": "official channel baseline enrichment"
     },
     {
       "id": "tedx-poverty-eldorado-2015",
@@ -79,14 +81,15 @@
         "community"
       ],
       "related_project": null,
-      "confidence": "medium - matching duration alone is insufficient to confirm exact syndication without full transcript/footage comparison",
-      "verification_status": "verified",
+      "confidence": "medium",
+      "verification_status": "unverified",
       "rights_status": "reference_only",
       "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
       "local_path": null,
-      "duplicate_of": "tedx-poverty-2014",
+      "duplicate_of": null,
       "duration": 1083,
-      "subtitles_available": []
+      "subtitles_available": [],
+      "confidence_reason": "matching duration alone is insufficient to confirm exact syndication without full transcript/footage comparison"
     },
     {
       "id": "ted-ed-poverty-2016",
@@ -106,7 +109,7 @@
         "creative-technology"
       ],
       "related_project": null,
-      "confidence": "high - official TED-Ed channel but not a baseline performance",
+      "confidence": "high",
       "verification_status": "verified",
       "rights_status": "reference_only",
       "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
@@ -116,7 +119,8 @@
       "subtitles_available": [
         "es",
         "en"
-      ]
+      ],
+      "confidence_reason": "official TED-Ed channel but not a baseline performance"
     }
   ]
 }
