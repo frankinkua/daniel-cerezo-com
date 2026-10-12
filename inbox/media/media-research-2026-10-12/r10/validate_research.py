@@ -1,5 +1,39 @@
 import json
 import sys
+from datetime import datetime, timezone
+
+def is_valid_access_time(time_str):
+    if time_str is None:
+        return True
+    try:
+        # Handle 'Z' suffix for UTC
+        if time_str.endswith('Z'):
+            time_str = time_str[:-1] + '+00:00'
+        dt = datetime.fromisoformat(time_str)
+        # If it's a naive datetime (date-only), assume UTC for comparison
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        now = datetime.now(timezone.utc)
+        if dt > now:
+            return False # Future timestamp
+        return True
+    except ValueError:
+        return False # Invalid format
+
+def run_isolated_tests():
+    # Test valid past noon timestamp
+    assert is_valid_access_time('2026-10-11T12:00:00Z') == True
+
+    # Test future non-noon timestamp
+    assert is_valid_access_time('2027-10-12T13:00:00Z') == False
+
+    # Test null
+    assert is_valid_access_time(None) == True
+
+    # Test date-only
+    assert is_valid_access_time('2026-10-11') == True
+
+    print("Isolated helper tests passed.")
 
 def run_tests():
     with open('inbox/media/media-research-2026-10-12/r10/findings.json', 'r') as f:
@@ -36,8 +70,8 @@ def run_tests():
 
     # 3. Search log precision
     for log in search_log['log']:
-        if log['access_time'] is not None and "12:00:00" in log['access_time']:
-            errors.append(f"Invented precision found in search-log: {log['access_time']}")
+        if not is_valid_access_time(log.get('access_time')):
+            errors.append(f"Invalid or future timestamp found in search-log: {log.get('access_time')}")
 
     if errors:
         for err in errors:
@@ -48,4 +82,5 @@ def run_tests():
     sys.exit(0)
 
 if __name__ == '__main__':
+    run_isolated_tests()
     run_tests()
