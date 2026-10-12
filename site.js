@@ -97,57 +97,41 @@ if (typeof document !== "undefined") {
       .matchMedia("(min-width: 701px)")
       .addEventListener("change", closeMenu);
   }
-  const cards = [...document.querySelectorAll(".media-card[data-tags]")],
-    search = document.querySelector("#media-search");
-  const filters = [...document.querySelectorAll("[data-filter]")],
-    status = document.querySelector(".result-count"),
-    empty = document.querySelector(".no-results");
-  if (search && cards.length) {
-    let filter = "all";
-    const render = () => {
-      let count = 0;
-      cards.forEach((card) => {
-        const visible = matchesMedia(
-          { tags: card.dataset.tags.split(" "), text: card.textContent },
-          search.value,
-          filter,
-        );
-        card.hidden = !visible;
-        if (visible) count++;
-      });
-      if (status)
-        status.textContent =
-          document.documentElement.lang === "es"
-            ? count + " de " + cards.length + " medios"
-            : count + " of " + cards.length + " items";
-      if (empty) empty.hidden = count !== 0;
-    };
-    search.addEventListener("input", render);
-    filters.forEach((button) =>
-      button.addEventListener("click", () => {
-        filter = button.dataset.filter;
-        filters.forEach((b) =>
-          b.setAttribute("aria-pressed", String(b === button)),
-        );
-        render();
-      }),
-    );
-    render();
-  }
   const journey = document.querySelector(".journey");
   if (journey) {
     const steps = [...document.querySelectorAll(".story-step")],
       label = document.querySelector("#scene-label"),
       reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let queued = false;
+    const chapters = [...document.querySelectorAll("[data-scene-target]")];
+    const motion = document.querySelector(".story-motion-toggle");
+    let queued = false, paused = reduce.matches;
+    const setScene = (active) => {
+      journey.dataset.scene = String(active);
+      journey.style.setProperty("--progress", String(active / (steps.length - 1)));
+      label.textContent = steps[active].querySelector(".chapter").textContent;
+      chapters.forEach((link, index) => {
+        if (index === active) link.setAttribute("aria-current", "step");
+        else link.removeAttribute("aria-current");
+      });
+    };
+    const syncMotion = () => {
+      motion.setAttribute("aria-pressed", String(paused));
+      motion.textContent = paused ? "Recorrer con el scroll" : "Pausar animación al recorrer";
+      journey.dataset.paused = String(paused);
+    };
+    chapters.forEach((link, index) => link.addEventListener("click", (event) => {
+      event.preventDefault();
+      setScene(index);
+      steps[index].scrollIntoView({behavior: "instant", block: "start"});
+      history.replaceState(null, "", link.getAttribute("href"));
+    }));
+    motion.addEventListener("click", () => {
+      paused = !paused; syncMotion(); if (!paused) update();
+    });
+    syncMotion();
     const update = () => {
       queued = false;
-      if (reduce.matches) {
-        journey.dataset.scene = "0";
-        journey.style.setProperty("--progress", "0");
-        label.textContent = steps[0].querySelector(".chapter").textContent;
-        return;
-      }
+      if (paused) return;
       const focus =
         window.innerWidth <= 700
           ? Math.min(window.innerHeight * 0.75, window.innerHeight - 50)
@@ -156,12 +140,7 @@ if (typeof document !== "undefined") {
       steps.forEach((step, index) => {
         if (step.getBoundingClientRect().top <= focus) active = index;
       });
-      journey.dataset.scene = String(active);
-      journey.style.setProperty(
-        "--progress",
-        String(active / (steps.length - 1)),
-      );
-      label.textContent = steps[active].querySelector(".chapter").textContent;
+      setScene(active);
     };
     const queue = () => {
       if (!queued) {
@@ -171,7 +150,7 @@ if (typeof document !== "undefined") {
     };
     window.addEventListener("scroll", queue, { passive: true });
     window.addEventListener("resize", queue);
-    reduce.addEventListener("change", queue);
+    reduce.addEventListener("change", () => { paused = reduce.matches; syncMotion(); queue(); });
     update();
   }
 }

@@ -28,3 +28,7 @@ The existing domain `daniel-cerezo.com` is preserved. GitHub Pages tests the sit
 Jules research under `inbox/media/jules-daniel/` must be reviewed before any item is promoted into the main catalogue. An official website is not evidence of photo reuse permission. Do not rehost unlicensed references.
 
 Local fonts are DM Sans and Instrument Serif, with their SIL Open Font Licenses. User-supplied photography is not relicensed by the repository.
+
+## Project discovery update
+
+The media collection includes all six approved references, with TEDx, Creer Hacer and music shortcuts, shareable filters and source details. Four direct chapter controls and a scroll-animation pause button make the story user-controllable; reduced motion starts in manual mode. No new third-party media is rehosted.

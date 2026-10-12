@@ -24,6 +24,8 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="site.js" defer></script>
+    <link rel="stylesheet" href="assets/explorer.css" />
+    <script src="assets/explorer.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -108,6 +110,12 @@
               <span id="scene-label">01 / El barrio</span
               ><span class="scene-progress" aria-hidden="true"><i></i></span>
             </div>
+            <nav class="chapter-controls" aria-label="Elegir un capítulo">
+              <a href="#barrio" data-scene-target="0" aria-current="step">Barrio</a>
+              <a href="#musica" data-scene-target="1">Música</a>
+              <a href="#puentes" data-scene-target="2">Puentes</a>
+              <a href="#presente" data-scene-target="3">Hoy</a>
+            </nav>
             <svg
               viewBox="0 0 640 520"
               role="img"
@@ -248,6 +256,7 @@
               Una interpretación visual del camino, no una reconstrucción
               documental.
             </figcaption>
+            <button type="button" class="story-motion-toggle" aria-pressed="false">Pausar animación al recorrer</button>
           </figure>
           <div class="journey-steps">
             <article class="story-step" id="barrio" data-step="0">
@@ -372,12 +381,18 @@
             más cercano de Daniel.
           </p>
         </div>
+        <div class="project-shortcuts" role="group" aria-label="Explorar por proyecto">
+          <button type="button" data-project-query="TEDx" aria-pressed="false"><small>01 / Ideas para escuchar</small><strong>TEDx ↗</strong></button>
+          <button type="button" data-project-query="Creer Hacer" aria-pressed="false"><small>02 / Comunidad en acción</small><strong>Creer Hacer ↗</strong></button>
+          <button type="button" data-project-query="Música" aria-pressed="false"><small>03 / Un camino compartido</small><strong>Música ↗</strong></button>
+        </div>
         <div class="media-tools">
           <label for="media-search"
             >Buscá un tema
             <input
               id="media-search"
               type="search"
+              maxlength="120"
               placeholder="Probá: inclusión, music, retrato…"
               autocomplete="off"
           /></label>
@@ -391,10 +406,10 @@
             </button>
           </div>
         </div>
-        <p class="result-count" role="status" aria-live="polite"></p>
+        <div class="explorer-status"><p class="result-count" role="status" aria-live="polite"></p><div class="explorer-actions"><button type="button" data-media-reset>Restablecer</button><a href="#media" data-media-permalink>Enlace a esta vista ↗</a></div></div>
         <div class="media-grid">
           <article
-            class="media-card"
+            class="media-card" data-media-id="tedx-poverty-2014" data-keywords="TEDx TEDxRiodelaPlata pobreza music música"
             data-tags="video community social-impact poverty"
           >
             <a
@@ -416,7 +431,7 @@
             </div>
           </article>
           <article
-            class="media-card"
+            class="media-card" data-media-id="tedx-inclusion-2021" data-keywords="TEDx TEDxSanIsidro inclusión"
             data-tags="video community social-impact inclusion"
           >
             <a
@@ -437,7 +452,7 @@
               <span class="tags">Charla · Inclusión · Comunidad</span>
             </div>
           </article>
-          <article class="media-card" data-tags="portrait personal">
+          <article class="media-card" data-media-id="daniel-sunglasses" data-keywords="Daniel retrato sonrisa" data-tags="portrait personal">
             <img
               class="media-portrait"
               src="inbox/media/images/daniel-sunglasses.png"
@@ -456,7 +471,20 @@
               <span class="tags">Retrato · Personal</span>
             </div>
           </article>
+          <article class="media-card" data-media-id="creer-hacer" data-keywords="Creer Hacer CreerHacer proyectos comunidad" data-tags="community social-impact entrepreneurship">
+            <a class="media-art community-cover" href="https://creerhacer.com/nosotros/"><span>CREER HACER / SITIO OFICIAL</span><strong>Las capacidades<br /><em>se construyen<br />en comunidad.</em></strong><span>CONOCÉ EL PROYECTO ↗</span></a>
+            <div><span class="eyebrow">Proyecto / Comunidad</span><h3>Creer es el comienzo. Hacer, el encuentro.</h3><p>El trabajo de la organización que conecta comunidades e instituciones a través del aprendizaje y los vínculos.</p><span class="tags">Creer Hacer · Comunidad · Impacto social</span></div>
+          </article>
+          <article class="media-card" data-media-id="daniel-profile-2016" data-keywords="música music piano La Nación Daniel Cerezo historia entrevista" data-tags="press community music">
+            <a class="media-art press-art" href="https://www.lanacion.com.ar/comunidad/daniel-cerezo-la-calle-te-ensena-a-superarte-el-valor-de-la-palabra-y-a-compartir-nid1891222/"><span>LA NACION / ABRIL 2016</span><strong>Aprender.<br />Compartir.<br /><em>Abrir caminos.</em></strong><span>LEÉ LA ENTREVISTA ↗</span></a>
+            <div><span class="eyebrow">Entrevista / Historia de vida</span><h3>La historia, en sus propias palabras.</h3><p>La música, el trabajo comunitario y los aprendizajes que dan forma a una manera de encontrarse con otros.</p><span class="tags">Música · Comunidad · Entrevista</span></div>
+          </article>
+          <article class="media-card" data-media-id="daniel-music-2014" data-keywords="música music piano Página12 historia" data-tags="press music community">
+            <a class="media-art talk-cover second" href="https://www.pagina12.com.ar/diario/sociedad/3-256601-2014-10-02.html"><span>PÁGINA/12 / OCTUBRE 2014</span><strong>La música<br /><em>como puerta.</em></strong><span>DESCUBRÍ EL RECORRIDO ↗</span></a>
+            <div><span class="eyebrow">Perfil / Música y aprendizaje</span><h3>Antes del escenario, un piano.</h3><p>El perfil que recorre el aprendizaje musical y la experiencia de compartirlo en espacios comunitarios.</p><span class="tags">Música · Piano · Aprendizaje</span></div>
+          </article>
         </div>
+        <p data-source-note>Abrí «Fuente y contexto» en cada pieza para conocer su procedencia.</p>
         <p class="no-results" hidden>
           No encontramos coincidencias. Probá “charla”, “comunidad” o “retrato”.
         </p>
