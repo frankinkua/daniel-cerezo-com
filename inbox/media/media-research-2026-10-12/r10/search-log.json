@@ -1,0 +1,60 @@
+{
+  "queries": [
+    "\"Daniel Cerezo\" \"Creer Hacer\"",
+    "Daniel Cerezo Creer Hacer",
+    "\"Creer Hacer\" \"Daniel Cerezo\" site:youtube.com",
+    "\"Creer Hacer\"",
+    "Daniel Cerezo creek hacker (Wikipedia API)",
+    "Creer Hacer (Wikipedia API)"
+  ],
+  "log": [
+    {
+      "query": "\"Daniel Cerezo\" \"Creer Hacer\"",
+      "url": "google_search",
+      "access_time": null,
+      "outcome": "no results"
+    },
+    {
+      "query": "Daniel Cerezo Creer Hacer",
+      "url": "google_search",
+      "access_time": null,
+      "outcome": "no results"
+    },
+    {
+      "query": "\"Creer Hacer\" \"Daniel Cerezo\" site:youtube.com",
+      "url": "google_search",
+      "access_time": null,
+      "outcome": "no results"
+    },
+    {
+      "query": "Daniel Cerezo Creer Hacer",
+      "url": "DuckDuckGo",
+      "access_time": null,
+      "outcome": "blocked / no useful snippet"
+    },
+    {
+      "query": "Daniel Cerezo Creer Hacer",
+      "url": "Wikipedia Search API",
+      "access_time": null,
+      "outcome": "no results"
+    },
+    {
+      "query": "Creer Hacer",
+      "url": "Wikipedia Search API",
+      "access_time": null,
+      "outcome": "no matching topic"
+    },
+    {
+      "query": "view_text_website",
+      "url": "https://creerhacer.com/nosotros/",
+      "access_time": null,
+      "outcome": "verified"
+    },
+    {
+      "query": "view_text_website",
+      "url": "https://creerhacer.com/programas/",
+      "access_time": null,
+      "outcome": "verified"
+    }
+  ]
+}
