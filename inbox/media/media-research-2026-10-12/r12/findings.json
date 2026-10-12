@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "task_id": "R12",
+  "subject": "Daniel Cerezo",
+  "topic": "Speaking events and programmes",
+  "retrieved_at": "2026-10-12",
+  "items": [
+    {
+      "id": "tedx-eldorado-2015",
+      "type": "video",
+      "title": "¿Qué es la pobreza? El desafío de la vida en primera persona | Daniel Cerezo | TEDxEldorado",
+      "canonical_url": "https://www.youtube.com/watch?v=yzl1LeEI-oc",
+      "publisher": "TEDx Talks",
+      "published_at": "2015-09-11",
+      "language": "es",
+      "identity_evidence": "Title names Daniel Cerezo and TEDxEldorado. Verified YouTube oEmbed author is TEDx Talks.",
+      "supported_claim": "Delivered a talk at TEDxEldorado on September 11, 2015.",
+      "evidence_locator": "YouTube video title and metadata.",
+      "tags": [
+        "video",
+        "talk",
+        "community"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "confidence_reason": "Official TEDx YouTube channel.",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://www.youtube.com/watch?v=yzl1LeEI-oc",
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "crea-litoral-sur-2026",
+      "type": "article",
+      "title": "El poder de la cultura organizacional en la empresa agropecuaria",
+      "canonical_url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+      "publisher": "Región CREA Litoral Sur",
+      "published_at": "2026-06-18",
+      "language": "es",
+      "identity_evidence": "Article body states: 'Una conferencia de Daniel Cerezo en el congreso de la Región CREA Litoral Sur.'",
+      "supported_claim": "Delivered a conference on organizational culture for CREA Litoral Sur.",
+      "evidence_locator": "Article text.",
+      "tags": [
+        "press",
+        "entrepreneurship",
+        "community"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "confidence_reason": "Published on official CREA contents domain.",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+      "local_path": null,
+      "duplicate_of": null
+    }
+  ]
+}

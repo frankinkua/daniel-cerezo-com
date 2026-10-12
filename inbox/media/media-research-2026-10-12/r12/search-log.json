@@ -1,0 +1,42 @@
+[
+  {
+    "query": "\"Daniel Cerezo\" (programa OR conferencia OR expositor OR orador)",
+    "tool": "duckduckgo-search via python ddgs",
+    "url": "https://www.youtube.com/watch?v=yzl1LeEI-oc",
+    "access_time": "2026-10-12T12:00:00Z",
+    "outcome": "verified",
+    "reason": "Title is 'El desafío de la vida en primera persona | Daniel Cerezo | TEDxEldorado', clearly naming him in context of TEDxEldorado."
+  },
+  {
+    "query": "\"Daniel Cerezo\" (programa OR conferencia OR expositor OR orador)",
+    "tool": "duckduckgo-search via python ddgs",
+    "url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+    "access_time": "2026-10-12T12:00:00Z",
+    "outcome": "verified",
+    "reason": "Found reference: 'Una conferencia de Daniel Cerezo en el congreso de la Región CREA Litoral Sur', verifying identity through speaking context."
+  },
+  {
+    "query": "\"Daniel Cerezo\" TEDx",
+    "tool": "duckduckgo-search via python ddgs",
+    "url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+    "access_time": "2026-10-12T12:00:00Z",
+    "outcome": "duplicate",
+    "reason": "Already in catalog.json."
+  },
+  {
+    "query": "urllib.request fetch https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+    "tool": "urllib.request python",
+    "url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+    "access_time": "2026-10-12T12:00:00Z",
+    "outcome": "blocked",
+    "reason": "HTTP Error 403: Forbidden when using default python User-Agent."
+  },
+  {
+    "query": "urllib.request fetch https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484 with Mozilla User-Agent",
+    "tool": "urllib.request python",
+    "url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+    "access_time": "2026-10-12T12:00:00Z",
+    "outcome": "verified",
+    "reason": "Successfully fetched 105732 bytes of HTML when providing Mozilla/5.0 User-Agent."
+  }
+]
