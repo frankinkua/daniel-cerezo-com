@@ -13,6 +13,16 @@ human (Frank) has the final say.
 5. **No invented facts.** Cite sources; reflect Daniel Cerezo's authentic work and values.
 6. **100% Local-First Mandate** — prioritize local tooling and compute.
 
+## Private media research
+
+Frank authorizes downloading media, including copyright or rights-unknown
+images, for private internal review. Store those binaries only under
+`inbox/media/private/`, which is gitignored. Never include them in a commit, PR,
+public catalogue or website deployment. Keep `local_path` null in public
+records and retain source and rights details. This authorization covers private
+review only; it does not grant public reuse rights. Do not bypass access
+controls or download protected/full-length video.
+
 ## Commit identity
 
 Use Frank's identity for commits:
