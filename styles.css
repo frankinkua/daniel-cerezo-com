@@ -166,13 +166,13 @@ p {
   color: var(--blue);
   margin-left: 3px;
 }
-nav {
+#navigation {
   display: flex;
   align-items: center;
   gap: 32px;
   font-size: 13px;
 }
-nav a:hover,
+#navigation a:hover,
 .text-link:hover {
   color: var(--blue);
 }
@@ -829,13 +829,13 @@ footer p {
   .js .menu-toggle {
     display: block;
   }
-  nav {
+  #navigation {
     gap: 12px;
     font-size: 10px;
     flex-wrap: wrap;
     justify-content: flex-end;
   }
-  .js nav {
+  .js #navigation {
     display: none;
     position: absolute;
     top: 72px;
@@ -848,7 +848,7 @@ footer p {
     font-size: 15px;
     border-bottom: 1px solid var(--line);
   }
-  .js nav.is-open {
+  .js #navigation.is-open {
     display: flex;
   }
   .hero {
@@ -1147,6 +1147,11 @@ footer p {
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
+.chapter-controls { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:4px; padding:16px 20px 0; font-size:11px; }
+.chapter-controls a { text-align:center; padding:8px 2px; border:1px solid #bcc0ad; }
+.chapter-controls a[aria-current="step"] { background:#374e43; border-color:#374e43; color:#fff; }
+.story-motion-toggle { display:block; width:calc(100% - 40px); margin:0 20px 15px; border:0; border-top:1px solid #bcc0ad; background:none; color:#374e43; font-size:10px; padding:12px 4px 0; text-align:left; }
+.journey[data-paused="true"] svg * { transition:none; }
 .scene-progress {
   height: 2px;
   width: 100px;
@@ -1163,6 +1168,7 @@ footer p {
   display: block;
   width: 100%;
   height: auto;
+  max-height: max(180px, calc(100svh - 400px));
 }
 .journey-scene figcaption {
   font-size: 9px;
@@ -1448,7 +1454,7 @@ footer p {
   .story-step {
     min-height: 80vh;
     padding: 50px 0 50px;
-    scroll-margin-top: 360px;
+    scroll-margin-top: 445px;
   }
   .story-step:first-child {
     padding-top: 40px;
