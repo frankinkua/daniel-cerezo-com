@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "task_id": "r08",
+  "subject": "Daniel Cerezo",
+  "topic": "TED and TEDx canonical evidence",
+  "retrieved_at": "2026-10-12",
+  "items": [
+    {
+      "id": "tedx-poverty-2014-yt",
+      "type": "video",
+      "title": "\u00bfQu\u00e9 es la pobreza? | Daniel Cerezo | TEDxRiodelaPlata",
+      "canonical_url": "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "publisher": "TEDx Talks",
+      "published_at": null,
+      "language": "es",
+      "identity_evidence": "Official YouTube channel TEDx Talks identifies speaker as Daniel Cerezo at TEDxRiodelaPlata.",
+      "supported_claim": "Speaker identity and talk content about poverty and community.",
+      "evidence_locator": "Video title and description.",
+      "tags": [
+        "video",
+        "poverty",
+        "community",
+        "social-impact"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
+      "local_path": null,
+      "duplicate_of": "tedx-poverty-2014",
+      "duration": 1083,
+      "subtitles_available": [
+        "es",
+        "en"
+      ],
+      "confidence_reason": "official channel baseline enrichment"
+    },
+    {
+      "id": "tedx-inclusion-2021-yt",
+      "type": "video",
+      "title": "La hipocres\u00eda de la inclusi\u00f3n social | Daniel Cerezo | TEDxSanIsidro",
+      "canonical_url": "https://www.youtube.com/watch?v=VUI0K4rIZU0",
+      "publisher": "TEDx Talks",
+      "published_at": null,
+      "language": "es",
+      "identity_evidence": "Official YouTube channel TEDx Talks identifies speaker as Daniel Cerezo at TEDxSanIsidro.",
+      "supported_claim": "Speaker identity and talk content about social inclusion.",
+      "evidence_locator": "Video title and description.",
+      "tags": [
+        "video",
+        "inclusion",
+        "community",
+        "social-impact"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
+      "local_path": null,
+      "duplicate_of": "tedx-inclusion-2021",
+      "duration": 875,
+      "subtitles_available": [],
+      "confidence_reason": "official channel baseline enrichment"
+    },
+    {
+      "id": "tedx-poverty-eldorado-2015",
+      "type": "video",
+      "title": "\u00bfQu\u00e9 es la pobreza? El desaf\u00edo de la vida en primera persona | Daniel Cerezo | TEDxEldorado",
+      "canonical_url": "https://www.youtube.com/watch?v=yzl1LeEI-oc",
+      "publisher": "TEDx Talks",
+      "published_at": null,
+      "language": "es",
+      "identity_evidence": "Official YouTube channel TEDx Talks identifies speaker as Daniel Cerezo.",
+      "supported_claim": "Hypothesized syndicated re-upload of TEDxRiodelaPlata talk under TEDxEldorado branding.",
+      "evidence_locator": "Video length (1083s) matches exactly with TEDxRiodelaPlata talk. Cannot definitively establish same performance without matching footage/transcript.",
+      "tags": [
+        "video",
+        "poverty",
+        "community"
+      ],
+      "related_project": null,
+      "confidence": "medium",
+      "verification_status": "unverified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
+      "local_path": null,
+      "duplicate_of": null,
+      "duration": 1083,
+      "subtitles_available": [],
+      "confidence_reason": "matching duration alone is insufficient to confirm exact syndication without full transcript/footage comparison"
+    },
+    {
+      "id": "ted-ed-poverty-2016",
+      "type": "video",
+      "title": "Qu\u00e9 es la pobreza | Daniel Cerezo",
+      "canonical_url": "https://www.youtube.com/watch?v=KXeJm2wla6I",
+      "publisher": "S\u00e9 Curioso \u2014 TED-Ed",
+      "published_at": null,
+      "language": "es",
+      "identity_evidence": "Official TED-Ed Spanish channel identifies Daniel Cerezo.",
+      "supported_claim": "Animated TED-Ed lesson featuring ideas/narrative originally expressed by Daniel Cerezo, but not a direct recording of him.",
+      "evidence_locator": "TED-Ed animation credits and 'S\u00e9 Curioso \u2014 TED-Ed' channel description.",
+      "tags": [
+        "video",
+        "poverty",
+        "social-impact",
+        "creative-technology"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
+      "local_path": null,
+      "duplicate_of": null,
+      "duration": 914,
+      "subtitles_available": [
+        "es",
+        "en"
+      ],
+      "confidence_reason": "official TED-Ed channel but not a baseline performance"
+    }
+  ]
+}
