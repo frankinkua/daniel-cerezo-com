@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "task_id": "r14",
+  "subject": "Daniel Cerezo",
+  "topic": "Podcast and radio discovery",
+  "retrieved_at": "2026-10-12",
+  "items": [
+    {
+      "id": "podcast-ponerse-en-marcha-2025",
+      "type": "audio",
+      "title": "Cómo Crear Empresas Más Humanas - Entrevista a Daniel Cerezo",
+      "canonical_url": "https://podcasts.apple.com/us/podcast/c%C3%B3mo-crear-empresas-m%C3%A1s-humanas-entrevista-a-daniel-cerezo/id1622196588?i=1000713441841",
+      "publisher": "Ponerse en Marcha",
+      "published_at": "2025-06-18",
+      "language": "es",
+      "identity_evidence": "Episode description states he leads a consultancy uniting companies with social organizations (Creer Hacer context).",
+      "supported_claim": "Daniel Cerezo discusses creating more humane companies and his work connecting companies with social organizations.",
+      "evidence_locator": "Episode description",
+      "tags": [
+        "podcast",
+        "social-impact",
+        "entrepreneurship"
+      ],
+      "related_project": "Creer Hacer",
+      "confidence": "high",
+      "confidence_reason": "Contextual description strongly aligns with Daniel Cerezo's known background and current consultancy work.",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": null,
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "podcast-aprendedoras-seriales-2020",
+      "type": "audio",
+      "title": "20# LA GERENCIA DE LA FELICIDAD. ENTREVISTA A DANIEL CEREZO",
+      "canonical_url": "https://podcasts.apple.com/us/podcast/20-la-gerencia-de-la-felicidad-entrevista-a-daniel-cerezo/id1510895931?i=1000495575941",
+      "publisher": "Aprendedoras Seriales",
+      "published_at": "2020-10-21",
+      "language": "es",
+      "identity_evidence": "Episode explicitly mentions his background in a villa, music, and social psychology.",
+      "supported_claim": "Daniel Cerezo discusses his background using art and music as motivation, and his work generating opportunities.",
+      "evidence_locator": "Episode description",
+      "tags": [
+        "podcast",
+        "music",
+        "community"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "confidence_reason": "Description matches his biographical details exactly (villa, music, psychology).",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": null,
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "podcast-hablar-sobre-hablar-2021",
+      "type": "audio",
+      "title": "Daniel Cerezo en Hablar Sobre Hablar: \"Speaker se nace, se hace o te hacen\"",
+      "canonical_url": "https://podcasts.apple.com/us/podcast/daniel-cerezo-en-hablar-sobre-hablar-speaker-se-nace/id1566600263?i=1000545944800",
+      "publisher": "Hablar Sobre Hablar",
+      "published_at": "2021-12-23",
+      "language": "es",
+      "identity_evidence": "Description names him Dani Cerezo, a musician and social psychologist known for stories of self-improvement.",
+      "supported_claim": "Daniel discusses his experience and emotions when taking the stage to share his stories.",
+      "evidence_locator": "Episode description",
+      "tags": [
+        "podcast",
+        "music",
+        "personal"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "confidence_reason": "Specific mentions of him as a musician and social psychologist strongly align with his known profile.",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": null,
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "podcast-el-aprendiz-2022",
+      "type": "audio",
+      "title": "T3.4: DANIEL CEREZO - 11-04-22",
+      "canonical_url": "https://podcasts.apple.com/us/podcast/t3-4-daniel-cerezo-11-04-22/id1508368587?i=1000557391516",
+      "publisher": "El Aprendiz",
+      "published_at": "2022-04-12",
+      "language": "es",
+      "identity_evidence": "Creator of 'Crear Vale la Pena', used music for growth.",
+      "supported_claim": "Daniel discusses using tools and opportunities for growth through music and generating social change.",
+      "evidence_locator": "Episode description",
+      "tags": [
+        "podcast",
+        "social-impact",
+        "music"
+      ],
+      "related_project": "Crear Vale la Pena",
+      "confidence": "high",
+      "confidence_reason": "Mentions specific organizations and his connection to music as a social tool.",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": null,
+      "local_path": null,
+      "duplicate_of": null
+    }
+  ]
+}
