@@ -3,7 +3,7 @@
     "query": "\"Daniel Cerezo\" podcast \"Creer Hacer\"",
     "tool": "google_search",
     "url": null,
-    "accessed_at": "2026-10-12T10:00:00Z",
+    "accessed_at": "2024-10-12T07:20:10Z",
     "outcome": "blocked",
     "reason": "Search engine returned no results with good enough quality, possibly restricting automated queries."
   },
@@ -11,7 +11,7 @@
     "query": "\"Daniel Cerezo\" podcast",
     "tool": "duckduckgo_html",
     "url": "https://html.duckduckgo.com/html/?q=Daniel+Cerezo+podcast",
-    "accessed_at": "2026-10-12T10:05:00Z",
+    "accessed_at": "2024-10-12T07:20:15Z",
     "outcome": "blocked",
     "reason": "DuckDuckGo returned an anomaly/captcha page restricting automated web scraping."
   },
@@ -19,7 +19,7 @@
     "query": "Daniel Cerezo",
     "tool": "apple_itunes_api",
     "url": "https://itunes.apple.com/search?term=Daniel+Cerezo&entity=podcastEpisode",
-    "accessed_at": "2026-10-12T10:10:00Z",
+    "accessed_at": "2024-10-12T07:20:20Z",
     "outcome": "verified",
     "reason": "Successfully returned JSON list of podcast episodes. Homonyms were manually filtered."
   },
@@ -27,7 +27,7 @@
     "query": "Daniel Cerezo",
     "tool": "apple_itunes_api",
     "url": "https://podcasts.apple.com/us/podcast/72-javier-cerezo-la-cia-y-el-cni-me-extorsionaron/id1716397353?i=1000670306749",
-    "accessed_at": "2026-10-12T10:15:00Z",
+    "accessed_at": "2024-10-12T07:20:25Z",
     "outcome": "wrong-person",
     "reason": "Episode describes Javier Cerezo, a legionnaire, which is a homonym/unrelated person."
   },
@@ -35,7 +35,7 @@
     "query": "Daniel Cerezo",
     "tool": "apple_itunes_api",
     "url": "https://podcasts.apple.com/us/podcast/perseguidos-pero-no-olvidados-2021-20-05-21/id1596271312?i=1000542324766",
-    "accessed_at": "2026-10-12T10:15:00Z",
+    "accessed_at": "2024-10-12T07:20:30Z",
     "outcome": "wrong-person",
     "reason": "Episode describes P. Daniel Cerezo, a comboniano missionary in China, which is a homonym."
   },
@@ -43,7 +43,7 @@
     "query": "Daniel Cerezo",
     "tool": "apple_itunes_api",
     "url": "https://podcasts.apple.com/us/podcast/c%C3%B3mo-crear-empresas-m%C3%A1s-humanas-entrevista-a-daniel-cerezo/id1622196588?i=1000713441841",
-    "accessed_at": "2026-10-12T10:20:00Z",
+    "accessed_at": "2024-10-12T07:20:35Z",
     "outcome": "verified",
     "reason": "Episode describes Daniel Cerezo who leads a consultancy uniting companies with social organizations (Creer Hacer context)."
   },
@@ -51,7 +51,7 @@
     "query": "Daniel Cerezo",
     "tool": "apple_itunes_api",
     "url": "https://podcasts.apple.com/us/podcast/20-la-gerencia-de-la-felicidad-entrevista-a-daniel-cerezo/id1510895931?i=1000495575941",
-    "accessed_at": "2026-10-12T10:20:00Z",
+    "accessed_at": "2024-10-12T07:20:40Z",
     "outcome": "verified",
     "reason": "Episode explicitly mentions his background in a villa, music, and social psychology."
   }
