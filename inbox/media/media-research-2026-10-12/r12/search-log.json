@@ -1,0 +1,18 @@
+[
+  {
+    "query": "\"Daniel Cerezo\" (programa OR conferencia OR expositor OR orador)",
+    "tool": "duckduckgo-search via python ddgs",
+    "url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+    "access_time": "2026-10-12T07:13:04Z",
+    "outcome": "verified",
+    "reason": "Found reference: 'Una conferencia de Daniel Cerezo en el congreso de la Región CREA Litoral Sur', verifying identity through speaking context."
+  },
+  {
+    "query": "urllib.request fetch https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+    "tool": "urllib.request python",
+    "url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+    "access_time": "2026-10-12T07:13:04Z",
+    "outcome": "blocked",
+    "reason": "HTTP Error 403: Forbidden when using default python User-Agent. Documented as access limitation."
+  }
+]

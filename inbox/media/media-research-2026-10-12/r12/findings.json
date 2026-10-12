@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task_id": "R12",
+  "subject": "Daniel Cerezo",
+  "topic": "Speaking events and programmes",
+  "retrieved_at": "2026-10-12",
+  "items": [
+    {
+      "id": "crea-litoral-sur-2026",
+      "type": "article",
+      "title": "El poder de la cultura organizacional en la empresa agropecuaria",
+      "canonical_url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+      "publisher": "Región CREA Litoral Sur",
+      "published_at": "2026-06-18",
+      "language": "es",
+      "identity_evidence": "Article body states: 'Una conferencia de Daniel Cerezo en el congreso de la Región CREA Litoral Sur.'",
+      "supported_claim": "Delivered a conference on organizational culture for CREA Litoral Sur.",
+      "evidence_locator": "Article text.",
+      "tags": [
+        "press",
+        "entrepreneurship",
+        "community"
+      ],
+      "related_project": null,
+      "confidence": "high",
+      "confidence_reason": "Published on official CREA contents domain.",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://www.contenidoscrea.org.ar/empresa/el-poder-la-cultura-organizacional-la-empresa-agropecuaria-n5328484",
+      "local_path": null,
+      "duplicate_of": null
+    }
+  ]
+}
