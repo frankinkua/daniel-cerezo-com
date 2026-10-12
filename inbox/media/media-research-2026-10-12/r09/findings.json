@@ -56,7 +56,7 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": "task-r14",
+      "duplicate_of": null,
       "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     },
     {
@@ -111,7 +111,7 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": "task-r14",
+      "duplicate_of": null,
       "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     },
     {
@@ -139,7 +139,7 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": "task-r14",
+      "duplicate_of": null,
       "confidence_reason": "Publisher claims founding role in Crear Vale la Pena, which requires independent verification to be high confidence."
     },
     {
@@ -194,7 +194,7 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": "task-r14",
+      "duplicate_of": null,
       "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     }
   ]
