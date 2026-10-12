@@ -56,7 +56,8 @@
       "duplicate_of": null,
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/",
-      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo-1.png"
+      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo-1.png",
+      "canonical_url": "https://creerhacer.com/"
     },
     {
       "id": "creerhacer-logo-white",
@@ -81,7 +82,8 @@
       "duplicate_of": null,
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/",
-      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo_white-2.png"
+      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo_white-2.png",
+      "canonical_url": "https://creerhacer.com/"
     },
     {
       "id": "creerhacer-mapa",
@@ -106,7 +108,8 @@
       "duplicate_of": null,
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/nosotros/",
-      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/06/mapa-01.png"
+      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/06/mapa-01.png",
+      "canonical_url": "https://creerhacer.com/nosotros/"
     },
     {
       "id": "creerhacer-grafico-programas",
@@ -131,7 +134,8 @@
       "duplicate_of": null,
       "confidence_reason": "direct from official first-party website of the organization",
       "source_url": "https://creerhacer.com/programas/",
-      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/08/grafico-programas-01.png"
+      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/08/grafico-programas-01.png",
+      "canonical_url": "https://creerhacer.com/programas/"
     }
   ]
 }
