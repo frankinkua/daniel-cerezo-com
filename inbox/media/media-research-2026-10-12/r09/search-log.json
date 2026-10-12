@@ -8,9 +8,26 @@
     "https://itunes.apple.com/search?term=Daniel+Cerezo+musica+comunidad&media=podcast&entity=podcastEpisode"
   ],
   "visited": [
-    "Google Search",
-    "DuckDuckGo",
-    "Apple Podcasts API"
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+comunidad&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found Hablar Sobre Hablar and Mundo Cero Referentes"
+    },
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+pobreza&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found Liderazgo y Motivaci\u00f3n and Ponerse en Marcha"
+    },
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+inclusion&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found El Aprendiz and Aprendedoras Seriales"
+    },
+    {
+      "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+Creer+Hacer&media=podcast&entity=podcastEpisode",
+      "access_date": "2026-10-12T06:40:00Z",
+      "outcome": "Success, found Vero Araujo El Lado Humano"
+    }
   ],
   "outcomes": {
     "Google Search": "Blocked/No useful results in standard web search",

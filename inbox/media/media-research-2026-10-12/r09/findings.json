@@ -29,7 +29,8 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": null
+      "duplicate_of": null,
+      "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     },
     {
       "id": "1000597139640",
@@ -55,7 +56,8 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": null
+      "duplicate_of": "task-r14",
+      "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     },
     {
       "id": "1000744335300",
@@ -82,7 +84,8 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": null
+      "duplicate_of": null,
+      "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     },
     {
       "id": "1000517442551",
@@ -92,8 +95,8 @@
       "publisher": "Vero Araujo El Lado Humano de las Organizaciones",
       "published_at": "2021-04-16",
       "language": "es",
-      "identity_evidence": "Names Daniel Cerezo as Social Psychologist, former Culture and Happiness Manager at Paez, and founder of CreerHacer",
-      "supported_claim": "Speaker/interviewee on topic",
+      "identity_evidence": "Publisher claims Daniel Cerezo as Social Psychologist, former Culture and Happiness Manager at Paez, and founder of CreerHacer.",
+      "supported_claim": "Speaker on entrepreneurship/community (publisher claimed founder of CreerHacer)",
       "evidence_locator": "Description",
       "tags": [
         "audio",
@@ -108,7 +111,8 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": null
+      "duplicate_of": "task-r14",
+      "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     },
     {
       "id": "1000557391516",
@@ -118,8 +122,8 @@
       "publisher": "El Aprendiz",
       "published_at": "2022-04-12",
       "language": "es",
-      "identity_evidence": "Names Daniel Cerezo as creator of the Foundation \"Crear Vale la Pena\" and knowing the value of tools/opportunities to grow through music",
-      "supported_claim": "Speaker/interviewee on topic",
+      "identity_evidence": "Publisher claims Daniel Cerezo is creator of Foundation 'Crear Vale la Pena'. Mentions music and opportunities.",
+      "supported_claim": "Speaker on music/community. Note: Publisher claimed founder of 'Crear Vale la Pena', needs independent evidence.",
       "evidence_locator": "Description",
       "tags": [
         "audio",
@@ -130,12 +134,13 @@
         "social-impact"
       ],
       "related_project": "Crear Vale la Pena",
-      "confidence": "high",
+      "confidence": "medium",
       "verification_status": "verified",
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": null
+      "duplicate_of": "task-r14",
+      "confidence_reason": "Publisher claims founding role in Crear Vale la Pena, which requires independent verification to be high confidence."
     },
     {
       "id": "1000713441841",
@@ -161,7 +166,8 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": null
+      "duplicate_of": null,
+      "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     },
     {
       "id": "1000495575941",
@@ -171,7 +177,7 @@
       "publisher": "Aprendedoras Seriales",
       "published_at": "2020-10-21",
       "language": "es",
-      "identity_evidence": "Names Daniel Cerezo as musician and social psychologist, raised in a villa, worked with people with addictions",
+      "identity_evidence": "Publisher claims Daniel Cerezo is musician and social psychologist, raised in a villa, worked with people with addictions.",
       "supported_claim": "Speaker/interviewee on topic",
       "evidence_locator": "Description",
       "tags": [
@@ -188,7 +194,8 @@
       "rights_status": "reference_only",
       "rights_evidence_url": null,
       "local_path": null,
-      "duplicate_of": null
+      "duplicate_of": "task-r14",
+      "confidence_reason": "Identity confirmed by biographical elements such as music, poverty, social impact or explicitly cited organizations."
     }
   ]
 }
