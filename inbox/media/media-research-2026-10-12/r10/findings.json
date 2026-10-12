@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "task_id": "r10",
+  "subject": "Daniel Cerezo",
+  "topic": "Creer Hacer",
+  "retrieved_at": "2026-10-12",
+  "items": [
+    {
+      "id": "creerhacer-programas",
+      "type": "website",
+      "title": "Creer Hacer - Programas",
+      "canonical_url": "https://creerhacer.com/programas/",
+      "publisher": "Creer Hacer",
+      "published_at": null,
+      "language": "es",
+      "identity_evidence": "Contextual extension of Creer Hacer organization",
+      "supported_claim": "Creer Hacer runs multiple social impact programs like Curso de Transformadores Sociales",
+      "evidence_locator": "Programas de Alto Impacto Social section",
+      "tags": [
+        "entrepreneurship",
+        "community",
+        "social-impact",
+        "inclusion"
+      ],
+      "related_project": "Creer Hacer",
+      "confidence": "high - direct from official first-party website of the organization",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": null,
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "creerhacer-logo-1",
+      "type": "image",
+      "title": "Creer Hacer - Logo",
+      "canonical_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo-1.png",
+      "publisher": "Creer Hacer",
+      "published_at": "2018-05",
+      "language": "es",
+      "identity_evidence": "Found on the official website header.",
+      "supported_claim": "Logo of the Creer Hacer organization",
+      "evidence_locator": "header",
+      "tags": [
+        "social-impact",
+        "entrepreneurship"
+      ],
+      "related_project": "Creer Hacer",
+      "confidence": "high - direct from official first-party website of the organization",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://creerhacer.com/",
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "creerhacer-logo-white",
+      "type": "image",
+      "title": "Creer Hacer - Logo White",
+      "canonical_url": "https://creerhacer.com/wp-content/uploads/2018/05/logo_white-2.png",
+      "publisher": "Creer Hacer",
+      "published_at": "2018-05",
+      "language": "es",
+      "identity_evidence": "Found on the official website header.",
+      "supported_claim": "White logo of the Creer Hacer organization",
+      "evidence_locator": "header",
+      "tags": [
+        "social-impact",
+        "entrepreneurship"
+      ],
+      "related_project": "Creer Hacer",
+      "confidence": "high - direct from official first-party website of the organization",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://creerhacer.com/",
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "creerhacer-mapa",
+      "type": "image",
+      "title": "Creer Hacer - Mapa de Impacto",
+      "canonical_url": "https://creerhacer.com/wp-content/uploads/2018/06/mapa-01.png",
+      "publisher": "Creer Hacer",
+      "published_at": "2018-06",
+      "language": "es",
+      "identity_evidence": "Found on the official 'nosotros' page showing impact locations.",
+      "supported_claim": "Creer Hacer creates impact across Argentina",
+      "evidence_locator": "nosotros section under 'Creando impacto social en toda la Argentina'",
+      "tags": [
+        "social-impact",
+        "community"
+      ],
+      "related_project": "Creer Hacer",
+      "confidence": "high - direct from official first-party website of the organization",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://creerhacer.com/nosotros/",
+      "local_path": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "creerhacer-grafico-programas",
+      "type": "image",
+      "title": "Creer Hacer - Grafico Programas",
+      "canonical_url": "https://creerhacer.com/wp-content/uploads/2018/08/grafico-programas-01.png",
+      "publisher": "Creer Hacer",
+      "published_at": "2018-08",
+      "language": "es",
+      "identity_evidence": "Found on the official 'programas' page showing different programs.",
+      "supported_claim": "Creer Hacer runs multiple social impact programs",
+      "evidence_locator": "programas section",
+      "tags": [
+        "social-impact",
+        "entrepreneurship"
+      ],
+      "related_project": "Creer Hacer",
+      "confidence": "high - direct from official first-party website of the organization",
+      "verification_status": "verified",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://creerhacer.com/programas/",
+      "local_path": null,
+      "duplicate_of": null
+    }
+  ]
+}
