@@ -1,0 +1,58 @@
+[
+  {
+    "query": "\"Daniel Cerezo\" TEDxRiodelaPlata site:flickr.com",
+    "tool": "google_search",
+    "url": "N/A",
+    "access_time": "2026-10-12",
+    "outcome": "blocked/rejected",
+    "rejection_reason": "No results with good enough quality found."
+  },
+  {
+    "query": "\"Daniel Cerezo\" portrait photo",
+    "tool": "google_search",
+    "url": "N/A",
+    "access_time": "2026-10-12",
+    "outcome": "blocked/rejected",
+    "rejection_reason": "No results with good enough quality found."
+  },
+  {
+    "query": "Daniel Cerezo",
+    "tool": "en.wikipedia.org API",
+    "url": "https://en.wikipedia.org/w/api.php",
+    "access_time": "2026-10-12",
+    "outcome": "rejected",
+    "rejection_reason": "Wrong person. Results returned athletes and actors, not the requested subject."
+  },
+  {
+    "query": "Daniel Cerezo",
+    "tool": "commons.wikimedia.org API",
+    "url": "https://commons.wikimedia.org/w/api.php",
+    "access_time": "2026-10-12",
+    "outcome": "rejected",
+    "rejection_reason": "Wrong person. Results returned paintings by Mateo Cerezo."
+  },
+  {
+    "query": "Daniel Cerezo",
+    "tool": "es.wikipedia.org API",
+    "url": "https://es.wikipedia.org/w/api.php",
+    "access_time": "2026-10-12",
+    "outcome": "rejected",
+    "rejection_reason": "Homonyms. Results were politicians (Vinicio Cerezo), directors (Enrique Cerezo), actors, etc."
+  },
+  {
+    "query": "Creer Hacer website",
+    "tool": "curl/wget",
+    "url": "https://creerhacer.com/nosotros/",
+    "access_time": "2026-10-12",
+    "outcome": "verified reference",
+    "rejection_reason": "Reference only. The official website does not by itself establish permission to reuse its photos (2021 Copyright)."
+  },
+  {
+    "query": "Daniel Cerezo lanacion.com.ar",
+    "tool": "curl",
+    "url": "https://www.lanacion.com.ar/comunidad/daniel-cerezo-la-calle-te-ensena-a-superarte-el-valor-de-la-palabra-y-a-compartir-nid1891222/",
+    "access_time": "2026-10-12",
+    "outcome": "rejected",
+    "rejection_reason": "Access control/no permission. The publisher restricts copying."
+  }
+]

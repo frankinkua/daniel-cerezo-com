@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task_id": "r13",
+  "subject": "Daniel Cerezo",
+  "topic": "Portrait and press image rights",
+  "retrieved_at": "2026-10-12",
+  "generated_at": "2026-10-12T06:00:00Z",
+  "search_queries": [
+    "\"Daniel Cerezo\" TEDxRiodelaPlata site:flickr.com",
+    "\"Daniel Cerezo\" portrait photo",
+    "Daniel Cerezo"
+  ],
+  "items": [
+    {
+      "id": "creerhacer-cascada-foto-2",
+      "type": "image",
+      "title": "Cascada-foto-2-nosotros",
+      "canonical_url": "https://creerhacer.com/nosotros/",
+      "source_url": "https://creerhacer.com/nosotros/",
+      "asset_url": "https://creerhacer.com/wp-content/uploads/2018/05/Cascada-foto-2-nosotros.jpg",
+      "person": "Daniel Cerezo",
+      "publisher": "Creer Hacer",
+      "published_at": "2018-05",
+      "date": "2018-05",
+      "language": "es",
+      "identity_evidence": "Used on the official organization's 'Nosotros' page containing Daniel Cerezo's biography.",
+      "supported_claim": "Daniel Cerezo works for Creer Hacer",
+      "evidence_locator": "https://creerhacer.com/wp-content/uploads/2018/05/Cascada-foto-2-nosotros.jpg",
+      "caption": "Photo from Creer Hacer 'Nosotros' page",
+      "tags": ["portrait", "social-impact", "community", "entrepreneurship"],
+      "related_tags": ["entrepreneurship"],
+      "related_project": "Creer Hacer",
+      "confidence": "high",
+      "verification_status": "verified reference",
+      "rights_status": "reference_only",
+      "rights_evidence_url": "https://creerhacer.com/nosotros/",
+      "rights_evidence": "Reference only. Official organization website (2021 CreerHacer Copyright). Cannot determine explicitly open rights for downloading.",
+      "retrieved_at": "2026-10-12",
+      "local_path": null,
+      "duplicate_of": null
+    }
+  ]
+}
