@@ -1,0 +1,26 @@
+{
+  "queries": [
+    "\"Daniel Cerezo\" entrevista comunidad inclusion",
+    "\"Daniel Cerezo\" interview OR entrevista OR podcast",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo&media=podcast&entity=podcastEpisode",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo+pobreza+comunidad&media=podcast&entity=podcastEpisode",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo+comunidad&media=podcast&entity=podcastEpisode",
+    "https://itunes.apple.com/search?term=Daniel+Cerezo+musica+comunidad&media=podcast&entity=podcastEpisode"
+  ],
+  "visited": [
+    "Google Search",
+    "DuckDuckGo",
+    "Apple Podcasts API"
+  ],
+  "outcomes": {
+    "Google Search": "Blocked/No useful results in standard web search",
+    "DuckDuckGo": "Minimal direct matches, needed domain specific search",
+    "Apple Podcasts API": "Highly successful. Found multiple long-form interviews explicitly naming Daniel Cerezo (musician, social psychologist, Creer Hacer, poverty, community)."
+  },
+  "rejected_leads": [
+    "Podcasts mentioning other people named Javier Cerezo or Daniel Sanchez",
+    "Podcasts mentioning 'Daniel Cerezo' as a missionary in China (different person)",
+    "Podcasts where 'Cerezo' was mentioned in sports context (Enrique Cerezo from Atletico Madrid)"
+  ],
+  "tool_limitations": "Direct web search via DuckDuckGo/Google didn't surface interviews clearly. Had to pivot to Apple Podcasts API to find audio interviews."
+}
