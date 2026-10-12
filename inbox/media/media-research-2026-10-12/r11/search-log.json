@@ -1,0 +1,66 @@
+[
+  {
+    "query": "\"Daniel Cerezo\" piano musica",
+    "tool": "Google Search",
+    "url": "https://google.com/search?q=%22Daniel+Cerezo%22+piano+musica",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "no useful results",
+    "reason": "General search did not yield specific musical performances or original event records."
+  },
+  {
+    "query": "Daniel Cerezo \"Bajo Boulogne\"",
+    "tool": "Google Search",
+    "url": "https://google.com/search?q=Daniel+Cerezo+%22Bajo+Boulogne%22",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "no useful results",
+    "reason": "Search did not yield relevant event records."
+  },
+  {
+    "query": "\"Daniel Cerezo\" \"Creer Hacer\"",
+    "tool": "Google Search",
+    "url": "https://google.com/search?q=%22Daniel+Cerezo%22+%22Creer+Hacer%22",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "no useful results",
+    "reason": "Search did not yield specific music archives."
+  },
+  {
+    "query": "https://www.youtube.com/results?search_query=Daniel+Cerezo+m%C3%BAsica",
+    "tool": "urllib.request / HTTP GET",
+    "url": "https://www.youtube.com/results?search_query=Daniel+Cerezo+m%C3%BAsica",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "blocked / limited",
+    "reason": "YouTube web results require Javascript rendering or API access, returning unparsed polymer data. Standard text scraping fails."
+  },
+  {
+    "query": "https://api.duckduckgo.com/?q=Daniel+Cerezo+musica+Crear+vale+la+pena&format=json",
+    "tool": "DuckDuckGo API via urllib",
+    "url": "https://api.duckduckgo.com/?q=Daniel+Cerezo+musica+Crear+vale+la+pena&format=json",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "no results",
+    "reason": "DuckDuckGo Instant Answer API returned empty results for this query."
+  },
+  {
+    "query": "https://www.pagina12.com.ar/diario/sociedad/3-256601-2014-10-02.html",
+    "tool": "urllib.request / BeautifulSoup",
+    "url": "https://www.pagina12.com.ar/diario/sociedad/3-256601-2014-10-02.html",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "verified",
+    "reason": "Found article describing Daniel's early music experience with Liliana Harper and 'Gladys la bomba tucumana', confirming his piano background at age nine."
+  },
+  {
+    "query": "iTunes Search API: term=Daniel+Cerezo+music, media=music",
+    "tool": "iTunes Search API via urllib",
+    "url": "https://itunes.apple.com/search?term=Daniel+Cerezo+music&media=music&entity=song&limit=10",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "wrong-person",
+    "reason": "Returned generic songs without a verified identity link to the subject."
+  },
+  {
+    "query": "iTunes Search API: term=Daniel+Cerezo, media=podcast",
+    "tool": "iTunes Search API via urllib",
+    "url": "https://itunes.apple.com/search?term=Daniel+Cerezo&media=podcast&entity=podcastEpisode&limit=10",
+    "access_time": "2026-10-12T06:40:00Z",
+    "outcome": "rejected leads",
+    "reason": "Found several podcasts interviewing Daniel Cerezo, including 'Hablar Sobre Hablar' and 'Mundo Cero Referentes'. However, these do not specifically relate to his musical work and performance archives."
+  }
+]

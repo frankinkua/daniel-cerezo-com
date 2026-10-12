@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "task_id": "r11",
+  "subject": "Daniel Cerezo",
+  "topic": "Music and performance archives",
+  "retrieved_at": "2026-10-12",
+  "items": [
+    {
+      "id": "article-pagina12-music",
+      "type": "article",
+      "title": "The story behind the TEDx talk (Pagina12 - 2014)",
+      "canonical_url": "https://www.pagina12.com.ar/diario/sociedad/3-256601-2014-10-02.html",
+      "publisher": "Página/12",
+      "published_at": "2014-10-02",
+      "language": "es",
+      "identity_evidence": "Named report detailing his TEDx talk and childhood piano lessons with Liliana Harper.",
+      "supported_claim": "Began learning piano at age nine with Liliana Harper in his neighborhood.",
+      "evidence_locator": "Paragraph detailing his TEDx talk and interaction with Liliana Harper",
+      "tags": ["press", "music", "community"],
+      "related_project": null,
+      "confidence": "high",
+      "confidence_reason": "Major news outlet reporting on his public TEDx talk.",
+      "verification_status": "verified",
+      "rights_status": "unknown",
+      "rights_evidence_url": "https://www.pagina12.com.ar/diario/sociedad/3-256601-2014-10-02.html",
+      "local_path": null,
+      "duplicate_of": null
+    }
+  ]
+}
