@@ -25,6 +25,6 @@ Check desktop and mobile layout, all four scene states, menu keyboard behavior, 
 
 The existing domain `daniel-cerezo.com` is preserved. GitHub Pages tests the site and runs `scripts/build.cjs` to publish an explicit allowlist to `_site/`. The builder refuses to overwrite an existing build.
 
-Jules research under `inbox/media/jules-daniel/` must be reviewed before any item is promoted into the main catalogue. An official website is not evidence of photo reuse permission. Do not rehost unlicensed references.
+Jules research under `inbox/media/jules-daniel/` must be reviewed before any item is promoted into the main catalogue. Private owner-authorized research copies belong under the gitignored `inbox/media/private/` path. An official website is not evidence of permission to publish; do not rehost private copies or unlicensed references.
 
 Local fonts are DM Sans and Instrument Serif, with their SIL Open Font Licenses. User-supplied photography is not relicensed by the repository.
