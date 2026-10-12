@@ -1,0 +1,42 @@
+[
+  {
+    "query": "\"Daniel Cerezo\" TED",
+    "tool": "duckduckgo",
+    "outcome": "found_leads",
+    "urls": [
+      "https://www.youtube.com/watch?v=rmEGBKXrxNs",
+      "https://www.ted.com/talks/daniel_cerezo_la_hipocresia_de_la_inclusion_social"
+    ],
+    "notes": "Found existing catalog items."
+  },
+  {
+    "query": "\"Daniel Cerezo\" site:youtube.com",
+    "tool": "youtube_search",
+    "outcome": "found_leads",
+    "urls": [
+      "https://www.youtube.com/watch?v=KXeJm2wla6I",
+      "https://www.youtube.com/watch?v=yzl1LeEI-oc",
+      "https://www.youtube.com/watch?v=VUI0K4rIZU0",
+      "https://www.youtube.com/watch?v=rmEGBKXrxNs"
+    ],
+    "notes": "Discovered new canonical leads: TED-Ed video and TEDxEldorado."
+  },
+  {
+    "query": "https://www.youtube.com/watch?v=yzl1LeEI-oc",
+    "tool": "yt-dlp",
+    "outcome": "verified",
+    "notes": "TEDxEldorado talk. Verified duration matches TEDxRiodelaPlata talk. Syndicated/reuploaded by TEDx Talks channel. Uploaded 2015-09-12. Publisher: TEDx Talks."
+  },
+  {
+    "query": "https://www.youtube.com/watch?v=KXeJm2wla6I",
+    "tool": "yt-dlp",
+    "outcome": "verified",
+    "notes": "TED-Ed talk \"Qué es la pobreza\". Animated version. Uploaded 2016-06-07 by Sé Curioso — TED-Ed. Duration 914s. Captions available in EN, ES."
+  },
+  {
+    "query": "https://www.youtube.com/watch?v=VUI0K4rIZU0",
+    "tool": "yt-dlp",
+    "outcome": "verified",
+    "notes": "TEDxSanIsidro talk \"La hipocresía de la inclusión social\". Uploaded 2022-01-10. This is the YouTube canonical source for the TED.com video in existing catalog."
+  }
+]
